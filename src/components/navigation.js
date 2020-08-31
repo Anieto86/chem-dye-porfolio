@@ -4,7 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 //logo
-import logo from './img/logo.PNG'
+import logo from './img/CD_SI.png'
 
 //Style
 const navStyle = {
@@ -14,12 +14,13 @@ const navStyle = {
 
 const logoStyle = {
   height: "100px",
-  width: "100px"
+  width: "120px"
 };
 
 const txtStyle = {
   color: "black",
-  fontSize: "20px"
+  fontSize: "20px",
+  fontFamily: 'Abel',
 };
 
 const btnStyle = {
@@ -38,18 +39,23 @@ export default function navigation() {
       <div className="container justify-content-end">
         <ul className="nav ">
           <li className="nav-item">
-            <Link to="/"> 
-            <button style={btnStyle} className="nav-link active" to="/">Home</button>
+            <Link to="/">
+              <button style={btnStyle} className="nav-link active" to="/">Home</button>
             </Link>
           </li>
           <li className="nav-item">
-          <Link to="/porfolio">
-            <button style={btnStyle} className="nav-link" >Porfolio</button>
+            <Link to="/porfolio">
+              <button style={btnStyle} className="nav-link">Porfolio</button>
             </Link>
           </li>
           <li className="nav-item">
-          <Link to="/about">
-            <button style={btnStyle} className="nav-link" >About Me</button>
+            <Link to="/about">
+              <button style={btnStyle} className="nav-link">About Me</button>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/testimonials">
+              <button style={btnStyle} className="nav-link">Testimonial</button>
             </Link>
           </li>
         </ul>

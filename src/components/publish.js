@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Porfolio() {
+export default function Publish() {
     return (
         <div>
-          hola porfolio 
+            <h1>hola publish</h1>
         </div>
     )
 }
