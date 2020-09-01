@@ -1,22 +1,27 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import mariana from "./img/mariana.jpg"
 
-const btnStyle = {
-    backgroundColor: "black",
-    color: "white",
-    borderRadius: "20px",
-    padding: "10px"
-}
+const BtnStyle = styled.button`
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    display:block;
+     margin:auto;
+`;
 
-const marianaStyle = {
-    height: "10%",
-    width: "20%",
-    borderRadius: "20px",
-    borderColor: "black"
-}
+const MarianaStyle = styled.img`
+    height: 10%;
+    width: 20%;
+    border-radius: 20px;
+    border-color: black;
+    display:block;
+     margin:auto;
+`;
 
-const txtChem ={
+const txtChem = {
     fontFamily: 'Abel',
 }
 
@@ -25,12 +30,12 @@ export default function About() {
         <div className="container">
             <h1 style={txtChem}>Hi I'm Mariana Oksdath</h1>
             <h2 style={txtChem}>Scientific illustrator</h2>
-            <br/>
-            <img src={mariana} style={marianaStyle} alt="mariana"/>
+            <br />
+            <MarianaStyle src={mariana} alt="mariana" />
             <p style={txtChem} >ChemDye born with the idea to help researchers to achieve their goals using the powerful tool of visual communication.  As a scientist myself, I understood that time and resources are essential in research, let’s not waste it. I will put all my knowledge in chemistry and biology to create the right image of your investigation in a short time frame.</p>
-            <br/>
+            <br />
             <h2 style={txtChem} >About myself</h2>
-            <br/>
+            <br />
             <p style={txtChem}>Hi, my name is Mariana Oksdath Mansilla I am a scientific illustrator. I have a BS. Chem (Hons),
             a PhD in neuroscience specialised on neuronal development, and a post-doc in brain cancer were
             I worked with cerebral organoid models.
@@ -42,7 +47,8 @@ export default function About() {
             I am currently based on Adelaide, Australia working with scientists around the globe. I help
             them on their images for journal publications, talks, posters including cool infographics, grant
             and fellowship applications. I help researchers to tell their story, and I love it.</p>
-            <button style={btnStyle}>HOW CAN I HELP</button>
+
+            <BtnStyle >HOW CAN I HELP</BtnStyle>
         </div>
     )
 }
