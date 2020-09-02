@@ -12,7 +12,7 @@ import Navigation from './components/navigation'
 import Home from './components/home'
 import Porfolio from './components/porfolio'
 import About from './components/about'
-// import Footer from './components/footer'
+import Footer from './components/footer'
 import Testimonials from './components/testimonials'
 import Publish from './components/publish'
 
@@ -79,7 +79,7 @@ function App() {
         <Testimonials />
       </Route>
 
-      {/* <Footer/> */}
+      <Footer/>
 
     </Router>
 

@@ -10,35 +10,38 @@ import logo from './img/CD_SI.png'
 //Style
 const NavStyle = styled.nav`
   height: auto;
-  opacity: 0.9;
+  
+ 
 `
 
 const LogoStyle = styled.img`
   height: 100px;
   width: 120px;
-  margin-left:50px;
+  margin-left:200px;
 `
 
-const TxtStyle = styled.h4`
+const TxtStyle = styled.h1`
    margin-left: 20px;
   font-size: 30px;
   font-family: Abel;
-`
+  color: #392767;
+`;
 
 const BtnStyle = styled.button`
-  background-color: black;
-  color: white;
+  background-color:  #392767;
+  color: #66cccc;
   border-radius: 20px;
-  margin: 5px;
-  border: 5px  solid lightblue;
+ 
+  margin: 10px;
+  border: 3px  solid #66cccc;
   `
 
 export default function navigation() {
   return (
-    <NavStyle className="navbar navbar-light bg-light">
+    <NavStyle className="navbar navba bg">
       <LogoStyle src={logo} className="d-inline-block align-top" alt="" loading="lazy" />
 
-      <TxtStyle className="navbar-text">Mariana Oksdath Scientific Illustrator</TxtStyle>
+      <TxtStyle className="navbar-text"></TxtStyle>
 
       <div className="container justify-content-end">
         <ul className="nav ">
