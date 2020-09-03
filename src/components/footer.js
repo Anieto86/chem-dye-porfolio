@@ -29,7 +29,11 @@ margin-top:2rem;
 export default function Footer() {
     return (
         <div>
+
             <FooterStyle>
+                <div>
+                <h1>LET’S BE SOCIAL</h1>
+                </div>
                 <IconStyled href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
                     <FontAwesomeIcon icon={faFacebook} style={{ fontSize: "3em", color: "White" }} className='pieicon' />
                 </IconStyled>
@@ -44,7 +48,6 @@ export default function Footer() {
                 </IconStyled>
                 <p className="linkfAl" >© 2020 | Alvaro Nieto </p>
             </FooterStyle>
-            
         </div>
     )
 }
