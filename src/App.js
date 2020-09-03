@@ -14,7 +14,8 @@ import Porfolio from './components/porfolio'
 import About from './components/about'
 import Footer from './components/footer'
 import Testimonials from './components/testimonials'
-import Publish from './components/publish'
+
+
 
 //?Import Img in Portal
 import graphicalAbstract from './components/img/graphical-abstract.jpg'
@@ -38,38 +39,28 @@ function App() {
         <Home />
       </Route>
 
+<div className="container" style={{flexWrap: "wrap"}}>
       <Route path="/porfolio">
         <Porfolio
-          photo={graphicalAbstract}
-        />
-
+          photo={graphicalAbstract}/>
         <Porfolio
-          photo={organoid}
-        />
+          photo={organoid} />
         <Porfolio
-          photo={cell}
-        />
-      </Route>
-
-      <Route path="/porfolio">
-        <Publish
+          photo={cell} />
+        <Porfolio
           photo={oksdath2016} />
-        <Publish
+        <Porfolio
           photo={sosa2016} />
-
-        <Publish
+        <Porfolio
           photo={oksdath2018} />
-
-        <Publish
+        <Porfolio
           photo={quiroga2018} />
-        <Publish
+        <Porfolio
           photo={perrin2018} />
-
-        <Publish
+        <Porfolio
           photo={ebert2020} />
-
       </Route>
-
+</div>
 
       <Route path="/about">
         <About />
@@ -79,8 +70,7 @@ function App() {
         <Testimonials />
       </Route>
 
-      <Footer/>
-
+      <Footer />
     </Router>
 
 

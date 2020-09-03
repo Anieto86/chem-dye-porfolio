@@ -20,8 +20,9 @@ justify-content:space-evenly;
 
 const IconStyled = styled.a`
 margin-top:2rem;
-
-
+color: White;
+ color: White;
+ font-size: 3em;
 `;
 
 
@@ -29,22 +30,21 @@ margin-top:2rem;
 export default function Footer() {
     return (
         <div>
-
             <FooterStyle>
                 <div>
                 <h1>LET’S BE SOCIAL</h1>
                 </div>
                 <IconStyled href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
-                    <FontAwesomeIcon icon={faFacebook} style={{ fontSize: "3em", color: "White" }} className='pieicon' />
+                    <FontAwesomeIcon icon={faFacebook}  />
                 </IconStyled>
                 <IconStyled href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
-                    <FontAwesomeIcon icon={faTwitter} style={{ fontSize: "3em", color: "White" }} className='pieicon' />
+                    <FontAwesomeIcon icon={faTwitter}  />
                 </IconStyled>
                 <IconStyled href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
-                    <FontAwesomeIcon icon={faInstagram} style={{ fontSize: "3em", color: "White" }} className='pieicon' />
+                    <FontAwesomeIcon icon={faInstagram} />
                 </IconStyled>
                 <IconStyled href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
-                    <FontAwesomeIcon icon={faLinkedinIn} style={{ fontSize: "3.5em", color: "White" }} className='pieiconAl' />
+                    <FontAwesomeIcon icon={faLinkedinIn}  />
                 </IconStyled>
                 <p className="linkfAl" >© 2020 | Alvaro Nieto </p>
             </FooterStyle>
