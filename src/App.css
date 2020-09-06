@@ -10,7 +10,16 @@ body {
   height: 100%; 
 }
 
-
+/* //*this for put the footer in the bootom whit flex box */
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* //*this for put the footer in the bootom whit flex box */
+.content-wrap{
+  flex:-1;
+}
 
 .App{
   padding:2%;

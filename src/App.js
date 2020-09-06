@@ -32,47 +32,48 @@ import perrin2018 from './components/img/Perrin2018.jpg'
 
 function App() {
   return (
-    <Router>
-      <Navigation />
 
-      <Route exact path="/">
-        <Home />
-      </Route>
+    <div className="page-container">
+      <div className="content-wrap">
+        <Router>
+          <Navigation />
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <div className="container" >
+            <Route path="/porfolio">
+              <Porfolio
+                photo={graphicalAbstract} />
+              <Porfolio
+                photo={oksdath2018} />
+              <Porfolio
+                photo={organoid} />
+              <Porfolio
+                photo={cell} />
+              <Porfolio
+                photo={oksdath2016} />
+              <Porfolio
+                photo={sosa2016} />
+              <Porfolio
+                photo={quiroga2018} />
+              <Porfolio
+                photo={perrin2018} />
+              <Porfolio
+                photo={ebert2020} />
+            </Route>
+          </div>
 
-<div className="container" style={{flexWrap: "wrap"}}>
-      <Route path="/porfolio">
-        <Porfolio
-          photo={graphicalAbstract}/>
-        <Porfolio
-          photo={organoid} />
-        <Porfolio
-          photo={cell} />
-        <Porfolio
-          photo={oksdath2016} />
-        <Porfolio
-          photo={sosa2016} />
-        <Porfolio
-          photo={oksdath2018} />
-        <Porfolio
-          photo={quiroga2018} />
-        <Porfolio
-          photo={perrin2018} />
-        <Porfolio
-          photo={ebert2020} />
-      </Route>
-</div>
+          <Route path="/about">
+            <About />
+          </Route>
 
-      <Route path="/about">
-        <About />
-      </Route>
-
-      <Route path="/testimonials">
-        <Testimonials />
-      </Route>
-
-      <Footer />
-    </Router>
-
+          <Route path="/testimonials">
+            <Testimonials />
+          </Route>
+          </Router>
+      </div>
+        <Footer />
+    </div>
 
   );
 }
