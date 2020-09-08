@@ -13,7 +13,7 @@ const Title = styled.h1`
 
 
 
-const SubTitle = styled.h4`
+const SubTitle = styled.h3`
      color: #392767;
      font-size:30px;
      font-weight: bold;
@@ -33,28 +33,18 @@ export default function Testimonials() {
     return (
         <div className="container">
             <Title>Testimonials</Title>
-            <SubTitle>Dra. Mariana Andrea Peralta
-            Profesora Adjunta
-            Investigadora Adjunta
-            Dpto. de Ciencias Farmacéuticas
-            IMBIV-CONICET
-            Facultad de Ciencias Químicas
-            Universidad Nacional de Córdoba</SubTitle>
-            <TextStyle>Working with Mariana was a very pleasant and efficient experience. ChemDye knew how to transform
+            <SubTitle>Working with Mariana was a very pleasant and efficient experience. ChemDye knew how to transform
             our ideas and simple explanations into an artwork that completely sums up the objective of our work,
             with a beautiful design. I recommend ChemDye to take your scientific work to a higher level by
-            gaining visibility.</TextStyle>
+            gaining visibility.</SubTitle>
+            <TextStyle>Dra. Mariana Andrea Peralta Profesora Adjunta IMBIV-CONICET| Córdoba Argentina</TextStyle>
 
 
-            <SubTitle>Dra. Mónica C. García
-            Unidad de Investigación y Desarrollo en Tecnología Farmacéutica (UNITEFA)-CONICET-UNC
-            Dpto de Ciencias Farmacéuticas
-            Facultad de Ciencias Químicas
-            Universidad Nacional de Córdoba</SubTitle>
-
-            <TextStyle>It has been a pleasing experience working with Mariana. She provides a fast and professional image
+            <SubTitle>It has been a pleasing experience working with Mariana. She provides a fast and professional image
             designing service. She is patient enough to modify the design more than once until she achieves a
-            final satisfactory figure according to my advice and requirement. I highly recommend her.</TextStyle>
+            final satisfactory figure according to my advice and requirement. I highly recommend her.</SubTitle>
+
+            <TextStyle>Dra. Mónica C. García | (UNITEFA)-CONICET-UNC | Córdoba Argentina </TextStyle>
         </div>
     )
 }

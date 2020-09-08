@@ -3,14 +3,6 @@ import styled from 'styled-components'
 
 import mariana from "./img/mariana.jpg"
 
-const BtnStyle = styled.button`
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    padding: 10px;
-    display:block;
-     margin:auto;
-`;
 
 const MarianaStyle = styled.img`
     height: 10%;
@@ -67,9 +59,6 @@ export default function About() {
             I am currently based on Adelaide, Australia working with scientists around the globe. I help
             them on their images for journal publications, talks, posters including cool infographics, grant
             and fellowship applications. I help researchers to tell their story, and I love it.</TextStyle>
-            <br/>
-            <BtnStyle >HOW CAN I HELP</BtnStyle>
-            <br/>
         </div>
     )
 }

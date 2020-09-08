@@ -1,16 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-//LogoS
-import logo from './img/CD_SI.png'
 
 
-const LogoHomeStyle = styled.img`
-     display:block;
-     margin:auto;
-     width : 500px;
-     margin-top : 100px;
-`;
+
 
 const NameStyle = styled.h1`
      text-align:center;
@@ -20,12 +13,43 @@ const NameStyle = styled.h1`
      font-size:50px;
 `;
 
+const SmallTitle = styled.h1`
+    margin-top:10rem;
+   font-family: Abel;
+   color:white;
+   text-align:center;
+   
+`;
+
+const TitleStyled = styled.h1`
+   font-family: Abel;
+   color:white;
+   text-align:center;
+   font-size:100px;
+`;
+
+const DescriptionStyle = styled.h2`
+  background: rgb(68,213,199);
+background: linear-gradient(77deg, rgba(68,213,199,1) 48%, rgba(71,204,131,1) 88%);
+font-family: Abel;
+height: 500px;
+
+color:white;
+
+`;
+
 export default function Home() {
     return (
-        <div className="container" >
-            <NameStyle>Mariana Oksdath</NameStyle>
-            <LogoHomeStyle src={logo}  alt="logo" />
-           
+        <div>
+            <div>
+                <NameStyle>Mariana Oksdath Mansilla</NameStyle>
+                <DescriptionStyle>
+                <SmallTitle>Providing services in </SmallTitle>
+                <TitleStyled > SCIENTIFIC ILLUSTRATION  IN MEDICAL AND BIOLOGY SCIENCE</TitleStyled>
+                   <p className="container"  styled={{ textAlign:"center"}}>
+                   ChemDye born with the idea to help researchers to achieve their goals using the powerful tool of visual communication.  As a scientist myself, I understood that time and resources are essential in research, let’s not waste it. I will put all my knowledge in chemistry and biology to create the right image of your investigation in a short time frame.</p> 
+                </DescriptionStyle>
+            </div>
         </div>
     )
 }

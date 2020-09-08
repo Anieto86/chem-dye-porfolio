@@ -10,6 +10,9 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
+//logo
+import logo from './img/CD_SI.png'
+
 const FooterStyle = styled.div`
 background-color: black;
 background-size: 100%;
@@ -18,24 +21,26 @@ padding:3rem;
 position:relative;
 bottom:0;
 color:white;
-height: 350px;
+height: auto;
 margin-top:10rem;
+
+`;
+
+const LogoStyle = styled.img`
+  height: 120px;
+  width: 140px;
+  
 `;
 
 const IconStyled = styled.a`
 color: White;
-width:10%;
-font-size: 3em;
-margin-top: 500rem;
-margin: 20px;
-height: 50px;
+font-size: 2rem;
+margin: 10px;
 `;
 
-const IconContainerStyled = styled.div`
-display:flex;
-justify-content: center;
-margin-top:30px;
-`;
+// const IconContainerStyled = styled.div`
+
+// `;
 
 const TextStyled = styled.p`
 text-align:center;
@@ -43,63 +48,47 @@ text-align:center;
 
 export default function Footer() {
     return (
-       
-            <FooterStyle className="main-footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
-                            <h4>Soy una columna muy puta</h4>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                                <div className="col">
-                                    <h4>Soy una columna muy puta2</h4>
-                                    <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                </div>
-                                <div className="col">
-                                    <h4>Soy una columna muy puta3</h4>
-                                    <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="row">
 
-
-                            </div>
-
-
-                    </div>
-               
-          
-            <IconContainerStyled className="container">
-                <IconStyled style={{ width: "75px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
-                    <FontAwesomeIcon icon={faFacebook} />
-                </IconStyled>
-                <IconStyled style={{ width: "75px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
-                    <FontAwesomeIcon icon={faTwitter} />
-                </IconStyled>
-                <IconStyled style={{ width: "75px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
-                    <FontAwesomeIcon icon={faInstagram} />
-                </IconStyled>
-                <IconStyled style={{ width: "75px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                </IconStyled>
-            </IconContainerStyled>
+        <FooterStyle className="main-footer">
             <div className="container">
-                <TextStyled >© 2020 | Alvaro Nieto | Web developer </TextStyled>
+                <div className="row">
+                    <div className="col">
+                        <h4>Soy una columna muy puta</h4>
+                        <h6>dame text</h6>
+                        <h6>dame text</h6>
+                        <h6>dame text</h6>
+                    </div>
+                    <div className="col">
+                        <h4>Soy una columna muy puta2</h4>
+                        <h6>dame text</h6>
+                        <h6>dame text</h6>
+                        <h6>dame text</h6>
+                    </div>
+                    <div className="col">
+                        <div className="container">
+                            <IconStyled style={{ width: "30px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
+                                <FontAwesomeIcon icon={faFacebook} />
+                            </IconStyled>
+                            <IconStyled style={{ width: "30px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
+                                <FontAwesomeIcon icon={faTwitter} />
+                            </IconStyled>
+                            <IconStyled style={{ width: "30px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </IconStyled>
+                            <IconStyled style={{ width: "30px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
+                                <FontAwesomeIcon icon={faLinkedinIn} />
+                            </IconStyled>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            </FooterStyle>
+            <br/>
+            <div className="container" style={{display: "flex", justifyContent: "center"}}>
+            <LogoStyle src={logo} className="d-inline-block align-top" alt="" loading="lazy" />
+            </div>
+            <br/>
+            <TextStyled >© 2020 | Alvaro Nieto | Web developer </TextStyled>
+        </FooterStyle>
 
     )
 }
