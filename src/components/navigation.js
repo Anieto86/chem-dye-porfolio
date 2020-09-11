@@ -27,17 +27,12 @@ const TxtStyle = styled.h1`
   color: #392767;
 `;
 
-const BtnStyle = styled.button`
-  background-color:  #392767;
-  color: #66cccc;
-  border-radius: 20px;
+const BtnStyle = styled.a`
+ color:black;
+ font-weight: 900;
+ font-size: 20px;
+ font-family: Abel;
   margin: 10px;
-  border: 3px  solid #66cccc;
-  &:hover{
-       background-color: #66cccc;
-       color: #392767;
-       border: 3px  solid #392767;
-  } 
 
   `
 
@@ -50,7 +45,6 @@ export default function navigation() {
         <ul className="nav ">
           <li className="nav-item">
             <Link to="/">
-
               <BtnStyle className="nav-link active" to="/">Home</BtnStyle>
             </Link>
           </li>

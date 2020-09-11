@@ -23,6 +23,7 @@ bottom:0;
 color:white;
 height: auto;
 margin-top:10rem;
+opacity:0.9;
 
 `;
 

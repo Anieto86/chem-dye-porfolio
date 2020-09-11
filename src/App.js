@@ -14,23 +14,29 @@ import Porfolio from './components/porfolio'
 import About from './components/about'
 import Footer from './components/footer'
 import Testimonials from './components/testimonials'
-
+import GraphAb from './components/graphAb'
+import Journal from './components/journal'
+import Infographics from './components/infographics'
+import GApplications from './components/gapplications'
+import Buttons from "./components/buttons.js"
 
 
 //?Import Img in Portal
-import graphicalAbstract from './components/img/graphical-abstract.jpg'
-import organoid from './components/img/organoids-shapes.jpg'
-import cell from './components/img/the-cell.png'
+import graphicalAbstract from './components/img/Graphical_Abstract_Monica_Garcia.png'
+import ScientificJournal from './components/img/Oksdath2018.png'
+import Infograph from './components/img/What-does-a-scientific-illustrator.png'
+import GrantApp from './components/img/the-cell.png'
 
-//?publshi img
-import quiroga2018 from './components/img/Quiroga-Cáceres2018.png'
-import sosa2016 from './components/img/sosa2016.jpg'
-import oksdath2016 from './components/img/Oksdath2016.jpg'
-import oksdath2018 from './components/img/Oksdath2018.png'
-import ebert2020 from './components/img/Ebert2020.jpg'
-import perrin2018 from './components/img/Perrin2018.jpg'
+
+//?import Grafical Abtract img 
+
+import peralta from './components/img/Graphical Abstract_Mariana_Peralta.png'
+import oksdath2017 from './components/img/Oksdath2017.jpg'
+import Ebert2020 from './components/img/Ebert2020.jpg'
 
 function App() {
+
+
   return (
 
     <div className="page-container">
@@ -42,24 +48,22 @@ function App() {
           </Route>
           <div className="container" >
             <Route path="/porfolio">
+              <Buttons />
               <Porfolio
-                photo={graphicalAbstract} />
+                title="Graphical Abstract"
+                photo={graphicalAbstract}
+
+              />
               <Porfolio
-                photo={oksdath2018} />
+                title="Scientific Journal Images"
+                photo={ScientificJournal} />
               <Porfolio
-                photo={organoid} />
+                title="Infographics"
+                photo={Infograph} />
               <Porfolio
-                photo={cell} />
-              <Porfolio
-                photo={oksdath2016} />
-              <Porfolio
-                photo={sosa2016} />
-              <Porfolio
-                photo={quiroga2018} />
-              <Porfolio
-                photo={perrin2018} />
-              <Porfolio
-                photo={ebert2020} />
+                title="Grant Applications"
+                photo={GrantApp} />
+
             </Route>
           </div>
 
@@ -70,9 +74,38 @@ function App() {
           <Route path="/testimonials">
             <Testimonials />
           </Route>
-          </Router>
+
+          <Route path="/graphAb">
+
+            <GraphAb
+              photo={peralta}
+              title=""
+              text="" /> 
+            <GraphAb
+              photo={oksdath2017}
+              title=""
+              text="" />
+            <GraphAb
+              photo={Ebert2020}
+              title=""
+              text="" />
+          </Route>
+
+          <Route path="/journal">
+            <Journal />
+          </Route>
+
+          <Route path="/infographics">
+            <Infographics />
+          </Route>
+
+          <Route path="/gapplications">
+            <GApplications />
+          </Route>
+
+        </Router>
       </div>
-        <Footer />
+      <Footer />
     </div>
 
   );

@@ -10,11 +10,11 @@ const NameStyle = styled.h1`
      color: #392767;
      font-family: Abel;
      margin-top:30px;
-     font-size:50px;
+     font-size:70px;
 `;
 
 const SmallTitle = styled.h1`
-    margin-top:10rem;
+   margin-top:10rem;
    font-family: Abel;
    color:white;
    text-align:center;
@@ -32,11 +32,37 @@ const DescriptionStyle = styled.h2`
   background: rgb(68,213,199);
 background: linear-gradient(77deg, rgba(68,213,199,1) 48%, rgba(71,204,131,1) 88%);
 font-family: Abel;
-height: 500px;
-
+height: auto;
 color:white;
-
 `;
+
+const ContentStyle = styled.div`
+background: rgb(14,205,208);
+background: linear-gradient(72deg, rgba(14,205,208,1) 31%, rgba(253,224,45,1) 100%);
+font-family: Abel;
+height: auto;
+color:white;
+`;
+
+const ServiceStyle = styled.div`
+font-family: Abel;
+font-size:15px;
+`;
+
+
+const MsgStyled = styled.p`
+font-family: Abel;
+font-size:30px;
+text-align:center;
+`;
+
+
+const LiStyled = styled.li`
+
+font-size:25px;
+`;
+
+
 
 export default function Home() {
     return (
@@ -44,12 +70,41 @@ export default function Home() {
             <div>
                 <NameStyle>Mariana Oksdath Mansilla</NameStyle>
                 <DescriptionStyle>
-                <SmallTitle>Providing services in </SmallTitle>
-                <TitleStyled > SCIENTIFIC ILLUSTRATION  IN MEDICAL AND BIOLOGY SCIENCE</TitleStyled>
-                   <p className="container"  styled={{ textAlign:"center"}}>
-                   ChemDye born with the idea to help researchers to achieve their goals using the powerful tool of visual communication.  As a scientist myself, I understood that time and resources are essential in research, let’s not waste it. I will put all my knowledge in chemistry and biology to create the right image of your investigation in a short time frame.</p> 
+                    <SmallTitle>Providing services in </SmallTitle>
+                    <TitleStyled > SCIENTIFIC ILLUSTRATION  IN MEDICAL AND BIOLOGY SCIENCE</TitleStyled>
                 </DescriptionStyle>
+                <br />
+                <br />
+               <ContentStyle>
+                    <h1 className="container" style={{ textAlign: "center" }}>What we do?</h1>
+                    <h1 className="container" style={{ textAlign: "center" }}>I'M AM SCIENTIS BY TRAINING AND ILLUSTRATORS BY HERAT</h1>
+                  
+                    <ServiceStyle className="container">
+                        <div className="row">
+                            <div className="col">
+                                <h2>Science Experience</h2>
+                                <h4>I worked in the field of Neuroscience,(Pondria el tiempo de experiencia), Where I studied neuronal development, growth factors, and molecular motors. I applied cellular and molecular techniques, and I worked with different animal models. Furthermore, I worked in Brain Cancer using ad main techniques organoids (mini-brains), stem cells and high-throughput platforms.</h4>
+                            </div>
+                            <div className="col"></div>
+                            <div className="col">
+                                <h2>Services Provided</h2>
+                                <ul>
+                                    <LiStyled>Graphical Abstract</LiStyled>
+                                    <LiStyled>Infographics</LiStyled>
+                                    <LiStyled>Talks Presentation</LiStyled>
+                                    <LiStyled>Scientific Journal Presentation</LiStyled>
+                                </ul>
+                            </div>
+                        </div>
+                    </ServiceStyle>
+                    <br />
+                    <br />
+                    <MsgStyled  className="container">
+                        "ChemDye" born with the idea to help researchers to achieve their goals using the powerful tool of visual communication.  As a scientist myself, I understood that time and resources are essential in research, let’s not waste it. I will put all my knowledge in chemistry and biology to create the right image of your investigation in a short time frame.
+                    </MsgStyled>
+             </ContentStyle>
             </div>
+
         </div>
     )
 }

@@ -20,6 +20,7 @@ const SubTitle = styled.h3`
      margin-top:30px;
     font-family: Abel;
     background-color: white;
+    opacity:0.8;
 `;
 
 const TextStyle = styled.p`
@@ -27,6 +28,7 @@ font-weight: bold;
 font-family: Abel;
 font-size:20px;
 background-color: white;
+opacity:0.8;
 `;
 
 export default function Testimonials() {
