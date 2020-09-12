@@ -29,14 +29,21 @@ import GrantApp from './components/img/the-cell.png'
 
 
 //?import Grafical Abtract img 
-
 import peralta from './components/img/Graphical Abstract_Mariana_Peralta.png'
 import oksdath2017 from './components/img/Oksdath2017.jpg'
 import Ebert2020 from './components/img/Ebert2020.jpg'
 
+
+//?import Journal ImgStyled
+
+import perrin2018a from './components/img/Perrin2018a.jpg'
+import perrin2018b from './components/img/Perrin2018b.jpg'
+import perrin2018c from './components/img/Perrin2018c.jpg'
+import sosa2017a from './components/img/sosa2017a.jpg'
+import sosa2017b from './components/img/sosa2017b.jpg'
+import sosa2017c from './components/img/sosa2017c.jpg'
+
 function App() {
-
-
   return (
 
     <div className="page-container">
@@ -46,26 +53,24 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <div className="container" >
-            <Route path="/porfolio">
-              <Buttons />
-              <Porfolio
-                title="Graphical Abstract"
-                photo={graphicalAbstract}
 
-              />
-              <Porfolio
-                title="Scientific Journal Images"
-                photo={ScientificJournal} />
-              <Porfolio
-                title="Infographics"
-                photo={Infograph} />
-              <Porfolio
-                title="Grant Applications"
-                photo={GrantApp} />
+          <Route path="/porfolio">
+            <Buttons />
+            <Porfolio
+              title="Graphical Abstract"
+              photo={graphicalAbstract}
 
-            </Route>
-          </div>
+            />
+            <Porfolio
+              title="Scientific Journal Images"
+              photo={ScientificJournal} />
+            <Porfolio
+              title="Infographics"
+              photo={Infograph} />
+            <Porfolio
+              title="Grant Applications"
+              photo={GrantApp} />
+          </Route>
 
           <Route path="/about">
             <About />
@@ -74,13 +79,12 @@ function App() {
           <Route path="/testimonials">
             <Testimonials />
           </Route>
-
+          <div className="container jurnalC" >
           <Route path="/graphAb">
-
             <GraphAb
               photo={peralta}
               title=""
-              text="" /> 
+              text="" />
             <GraphAb
               photo={oksdath2017}
               title=""
@@ -90,10 +94,36 @@ function App() {
               title=""
               text="" />
           </Route>
+          </div>
 
-          <Route path="/journal">
-            <Journal />
-          </Route>
+          <div className="container jurnalC" >
+            <Route path="/journal">
+              <Journal
+                photo={perrin2018a}
+                title=""
+                text="" />
+              <Journal
+                photo={perrin2018b}
+                title=""
+                text="" />
+              <Journal
+                photo={perrin2018c}
+                title=""
+                text="" />
+              <Journal
+                photo={sosa2017a}
+                title=""
+                text="" />
+              <Journal
+                photo={sosa2017b}
+                title=""
+                text="" />
+              <Journal
+                photo={sosa2017c}
+                title=""
+                text="" />
+            </Route>
+          </div>
 
           <Route path="/infographics">
             <Infographics />

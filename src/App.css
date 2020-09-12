@@ -29,3 +29,11 @@ body {
 .root{
   height: 100%;
 }
+
+
+
+.jurnalC{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}

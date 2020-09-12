@@ -8,10 +8,12 @@ const ImgBigContainer = styled.div`
     background-color:white;
     opacity:0.95;
     float:left;
-    height: 550px;
-    width: 100%;
-    margin:20px;
-    border:1px solid;
+    height: auto;
+    border-radius:10px;
+    margin:60px;
+    margin-right:50px;
+    border:solid 1px;
+
     bobox-shadow: 10px 10px 5px rgb(22, 22, 22);
    -moz-box-shadow: 10px 10px 5px  rgb(22, 22, 22);
    -webkit-box-shadow: 10px 10px 5px  rgb(22, 22, 22);
@@ -23,24 +25,33 @@ const ImgBigContainer = styled.div`
 const ImgStyledP = styled.img`
   height: 400px;
   object-fit:contain;
-  margin:auto;
+  
  
 `;
 
+const CardFooter = styled.footer`
+background-color:black;
+color:yellow;
+text-align:center;
+font-family: Abel;
+font-size:30px;
+height: auto;
+
+`;
 
 
 export default function Porfolio(props) {
-
- 
     return (
-        <ImgBigContainer className="container" style={{ width: "50%" }}>
-            <div className="body" style={{margin: "auto"}}>
-                <h5 className="title">{props.title}</h5>
+        <div className="container" >
+        <ImgBigContainer  style={{ width: "40%" }}>
+            <div className="body" >
                 <ImgStyledP className="container" src={props.photo} alt="Responsive" />
             <p className="text">Some quick example text to build on the card title and make up the bulk of the card's contentdfsssssssss
             sdfffffffffffffffffffffff.</p>
+            <CardFooter>{props.title}</CardFooter>
             </div>
         </ImgBigContainer>
+        </div>
     );
 }
 
