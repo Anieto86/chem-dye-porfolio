@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 //icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import {faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 //logo
 import logo from './img/CD_SI.png'
@@ -49,34 +49,29 @@ text-align:center;
 
 export default function Footer() {
     return (
-
         <FooterStyle className="main-footer">
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h4>Soy una columna muy puta</h4>
-                        <h6>dame text</h6>
-                        <h6>dame text</h6>
-                        <h6>dame text</h6>
+                        <h4>HOW CAN I HELP</h4>
+                        <br/>
+                        <h6>email incono </h6>
+                        <br/>
+                        <h6>Adelaide | SA | Australia</h6>
                     </div>
-                    <div className="col">
-                        <h4>Soy una columna muy puta2</h4>
-                        <h6>dame text</h6>
-                        <h6>dame text</h6>
-                        <h6>dame text</h6>
-                    </div>
+                    <div className="col"></div>
+                    <div className="col"></div>
                     <div className="col">
                         <div className="container">
-                            <IconStyled style={{ width: "30px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
-                                <FontAwesomeIcon icon={faFacebook} />
-                            </IconStyled>
+                        <h4>WORK IN PROGRESS</h4>
+                        <br/>
                             <IconStyled style={{ width: "30px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
                                 <FontAwesomeIcon icon={faTwitter} />
                             </IconStyled>
-                            <IconStyled style={{ width: "30px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
+                            <IconStyled style={{ width: "30px" }} href={"https://www.instagram.com/chemdye_si/"}>
                                 <FontAwesomeIcon icon={faInstagram} />
                             </IconStyled>
-                            <IconStyled style={{ width: "30px" }} href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
+                            <IconStyled style={{ width: "30px" }} href={"https://www.linkedin.com/in/mariana-oksdath-mansilla/"}>
                                 <FontAwesomeIcon icon={faLinkedinIn} />
                             </IconStyled>
                         </div>

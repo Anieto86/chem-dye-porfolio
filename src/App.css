@@ -1,8 +1,8 @@
 body {
-  background-image: url('../src/components/img/Background.jpg');
+  /* background-image: url('../src/components/img/Background.jpg'); */
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment:;
   height: 100%;
   background-color: blue;
   width: 100%; 
@@ -33,6 +33,7 @@ body {
 
 
 .jurnalC{
+  
   display:flex;
   justify-content:space-around;
   flex-wrap: wrap;

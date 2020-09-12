@@ -46,8 +46,7 @@ export default function Porfolio(props) {
         <ImgBigContainer  style={{ width: "40%" }}>
             <div className="body" >
                 <ImgStyledP className="container" src={props.photo} alt="Responsive" />
-            <p className="text">Some quick example text to build on the card title and make up the bulk of the card's contentdfsssssssss
-            sdfffffffffffffffffffffff.</p>
+            
             <CardFooter>{props.title}</CardFooter>
             </div>
         </ImgBigContainer>

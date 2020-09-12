@@ -5,10 +5,13 @@ import styled from 'styled-components'
 
 
 const ImgStyledP = styled.img`
-  height: 400px;
-  object-fit:contain;
-  
  
+ 
+  border-radius: 20px;
+ 
+ 
+ height: 400px;
+  object-fit:contain;
 `;
 
 
@@ -23,17 +26,18 @@ height: auto;
 `;
 
 
+
 const ImgBigContainer = styled.div`
     background-color:white;
     opacity:0.95;
-    /* float:left; */
     width: 30%;
     height: auto;
     border-radius:10px;
     margin:10px;
-   
     border:solid 1px;
-   
+    &:hover {transform:scale(1.08);}
+
+    
 `;
 
 
@@ -43,9 +47,8 @@ export default function Journal(props) {
         
             <ImgBigContainer  className="card"> 
                 <ImgStyledP src={props.photo} className="card-img-top" alt="Responsive" />
-                <div className="body">
-                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <CardFooter>I have a footer!</CardFooter>
+                <div className="body"> 
+                <CardFooter>Scientific Journal</CardFooter>
                 </div>
             </ ImgBigContainer >
         

@@ -45,7 +45,7 @@ export default function Journal(props) {
                 <ImgStyledP src={props.photo} className="card-img-top" alt="Responsive" />
                 <div className="body">
                     <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <CardFooter>I have a footer!</CardFooter>
+                <CardFooter>Graphical Abstract</CardFooter>
                 </div>
             </ ImgBigContainer >
         

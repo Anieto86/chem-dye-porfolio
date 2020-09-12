@@ -58,9 +58,7 @@ function App() {
             <Buttons />
             <Porfolio
               title="Graphical Abstract"
-              photo={graphicalAbstract}
-
-            />
+              photo={graphicalAbstract}/>
             <Porfolio
               title="Scientific Journal Images"
               photo={ScientificJournal} />
@@ -71,7 +69,6 @@ function App() {
               title="Grant Applications"
               photo={GrantApp} />
           </Route>
-
           <Route path="/about">
             <About />
           </Route>
@@ -79,25 +76,28 @@ function App() {
           <Route path="/testimonials">
             <Testimonials />
           </Route>
+
           <div className="container jurnalC" >
-          <Route path="/graphAb">
-            <GraphAb
-              photo={peralta}
-              title=""
-              text="" />
-            <GraphAb
-              photo={oksdath2017}
-              title=""
-              text="" />
-            <GraphAb
-              photo={Ebert2020}
-              title=""
-              text="" />
-          </Route>
+            <Route path="/graphAb">
+            <Buttons />
+              <GraphAb
+                photo={peralta}
+                title=""
+                text="" />
+              <GraphAb
+                photo={oksdath2017}
+                title=""
+                text="" />
+              <GraphAb
+                photo={Ebert2020}
+                title=""
+                text="" />
+            </Route>
           </div>
 
           <div className="container jurnalC" >
             <Route path="/journal">
+            <Buttons />
               <Journal
                 photo={perrin2018a}
                 title=""
@@ -125,14 +125,19 @@ function App() {
             </Route>
           </div>
 
-          <Route path="/infographics">
-            <Infographics />
-          </Route>
+          <div className="container jurnalC" >
+            <Route path="/infographics">
+            <Buttons />
+              <Infographics />
+            </Route>
+          </div>
 
-          <Route path="/gapplications">
-            <GApplications />
-          </Route>
-
+          <div className="container jurnalC" >
+            <Route path="/gapplications">
+            <Buttons />
+              <GApplications />
+            </Route>
+          </div>
         </Router>
       </div>
       <Footer />
