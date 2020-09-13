@@ -33,7 +33,7 @@ const ImgBigContainer = styled.div`
     margin:10px;
    
     border:solid 1px;
-   
+    &:hover {transform:scale(1.08);}
 `;
 
 
@@ -44,7 +44,6 @@ export default function Infographics(props) {
             <ImgBigContainer  className="card"> 
                 <ImgStyledP src={props.photo} className="card-img-top" alt="Responsive" />
                 <div className="body">
-                    <p className="card-text" styled={{ textAlign: "center" }}>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <CardFooter>Infographics</CardFooter>
                 </div>
             </ ImgBigContainer >

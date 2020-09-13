@@ -19,7 +19,6 @@ text-align:center;
 font-family: Abel;
 font-size:30px;
 height: auto;
-
 `;
 
 
@@ -31,9 +30,8 @@ const ImgBigContainer = styled.div`
     height: auto;
     border-radius:10px;
     margin:10px;
-   
     border:solid 1px;
-   
+    &:hover {transform:scale(1.08);}
 `;
 
 
@@ -44,7 +42,6 @@ export default function Grapplications (props) {
             <ImgBigContainer  className="card"> 
                 <ImgStyledP src={props.photo} className="card-img-top" alt="Responsive" />
                 <div className="body">
-                    <p className="card-text" styled={{ textAlign: "center" }}>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <CardFooter>Grant Applications</CardFooter>
                 </div>
             </ ImgBigContainer >

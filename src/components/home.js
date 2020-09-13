@@ -2,17 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-
-
-
-// const NameStyle = styled.h1`
-//      text-align:center;
-//      color: #392767;
-//      font-family: Abel;
-//      margin-top:30px;
-//      font-size:70px;
-// `;
-
 const SmallTitle = styled.h1`
    margin-top:10rem;
    font-family: Abel;
@@ -31,9 +20,9 @@ const TitleStyled = styled.h1`
 `;
 
 const DescriptionStyle = styled.h2`
-  /* background: rgb(68,213,199);
+/* background: rgb(68,213,199);
 background: linear-gradient(77deg, rgba(68,213,199,1) 48%, rgba(71,204,131,1) 88%); */
- background: url('./img/Background.jpg');
+background: url('../components/img/Background.jpg');
 font-family: Abel;
 height: auto;
 color:white;
@@ -62,9 +51,9 @@ text-align:center;
 
 
 const LiStyled = styled.li`
-
 font-size:25px;
 `;
+
 
 
 
