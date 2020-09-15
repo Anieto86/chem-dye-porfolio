@@ -55,7 +55,7 @@ export default function Footer() {
                 <div className="row">
                     <div className="col-3">
                         <h4>HOW CAN I HELP ?</h4>
-                            <IconStyled style={{ width: "30px" }} href={""}>
+                            <IconStyled style={{ width: "30px" }} href={"mailto:si.chemdye@gmail.com"}>
                                 <FontAwesomeIcon icon={faEnvelope} />
                             </IconStyled>
                         <br />
@@ -67,7 +67,7 @@ export default function Footer() {
                         <h4>WORK IN PROGRESS</h4>
                         <div className="container" style={{ display: "flex", justifyContent: "space-around" }}>
                             <br />
-                            <IconStyled style={{ width: "30px" }} href={"https://mariana.om8@gmail.com"}>
+                            <IconStyled style={{ width: "30px" }} href={"/"}>
                                 <FontAwesomeIcon icon={faTwitter} />
                             </IconStyled>
                             <IconStyled style={{ width: "30px" }} href={"https://www.instagram.com/chemdye_si/"}>
