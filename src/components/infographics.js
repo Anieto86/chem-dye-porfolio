@@ -33,6 +33,6 @@ export default function Infographics(props) {
                 <div className="body">
                 <CardFooter>Infographics</CardFooter>
                 </div>
-            </ ImgBigContainer >
+            </ ImgBigContainer>
     )
 }
