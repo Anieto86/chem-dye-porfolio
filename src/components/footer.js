@@ -1,6 +1,6 @@
 
-//*https://www.youtube.com/watch?time_continue=522&v=g459Eia-bxw&feature=emb_logo
-//*https://www.youtube.com/watch?v=o-cKmAeNJiA
+//!https://www.youtube.com/watch?time_continue=522&v=g459Eia-bxw&feature=emb_logo
+//!https://www.youtube.com/watch?v=o-cKmAeNJiA
 
 
 import React from 'react'
@@ -39,10 +39,6 @@ color: White;
 font-size: 3rem;
 margin-right:20%;
 `;
-
-// const IconContainerStyled = styled.div`
-
-// `;
 
 const TextStyled = styled.p`
 text-align:center;

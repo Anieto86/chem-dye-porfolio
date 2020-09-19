@@ -3,15 +3,12 @@ import styled from 'styled-components'
 
 import mariana from "./img/mariana.jpg"
 
-
 const MarianaStyle = styled.img`
-    
     width: 25%;
     border-radius: 20px;
     display:block;
      margin:auto;
 `;
-
 const TxtChem = styled.h1`
      color: #392767;
      font-size:50px;
@@ -20,7 +17,6 @@ const TxtChem = styled.h1`
     font-family: Abel;
     text-align:center;
 `;
-    
 const TxtSubChem = styled.h2`
      color: #392767;
      font-size:30px;
@@ -28,14 +24,12 @@ const TxtSubChem = styled.h2`
     font-family: Abel;
     text-align:center;
 `; 
-
   const TextStyle = styled.p`
   font-weight: bold;
   font-family: Abel;
   font-size:30px;
    background-color: white;
 `;
-
 export default function About() {
     return (
         <div className="container">

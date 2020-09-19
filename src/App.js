@@ -4,7 +4,7 @@ import './App.css';
 //Router 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-// Components
+//TODO   Components
 import Navigation from './components/navigation'
 import Home from './components/home'
 import Porfolio from './components/porfolio'
@@ -42,7 +42,6 @@ import informarB from './components/img/informarB.png'
 import informarC from './components/img/informarC.png'
 import informarD from './components/img/informarD.png'
 import informarE from './components/img/informarE.png'
-
 import organoids from './components/img/organoids-shapes.jpg'
 
 

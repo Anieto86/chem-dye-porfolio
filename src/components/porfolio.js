@@ -36,9 +36,7 @@ text-align:center;
 font-family: Abel;
 font-size:30px;
 height: auto;
-
 `;
-
 
 export default function Porfolio(props) {
     return (
@@ -46,7 +44,6 @@ export default function Porfolio(props) {
         <ImgBigContainer  style={{ width: "40%" }}>
             <div className="body" >
                 <ImgStyledP className="container" src={props.photo} alt="Responsive" />
-            
             <CardFooter>{props.title}</CardFooter>
             </div>
         </ImgBigContainer>

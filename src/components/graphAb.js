@@ -19,23 +19,18 @@ text-align:center;
 font-family: Abel;
 font-size:30px;
 height: auto;
-
 `;
-
 
 const ImgBigContainer = styled.div`
     background-color:white;
     opacity:0.95;
-    /* float:left; */
     width: 30%;
     height: auto;
     border-radius:10px;
     margin:10px;
-   
     border:solid 1px;
     &:hover {transform:scale(1.08);}
 `;
-
 
 export default function Journal(props) {
     return (
@@ -47,7 +42,5 @@ export default function Journal(props) {
                 <CardFooter>Graphical Abstract</CardFooter>
                 </div>
             </ ImgBigContainer >
-        
-       
     )
 }

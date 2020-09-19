@@ -10,31 +10,25 @@ import logo from './img/CD_SI.png'
 //Style
 const NavStyle = styled.nav`
   height: auto;
-  
- 
-`
-
+`;
 const LogoStyle = styled.img`
   height: 100px;
   width: 120px;
   margin-left:200px;
 `;
-
 const TxtStyle = styled.h1`
   margin-left: 20px;
   font-size: 30px;
   font-family: Abel;
   color: #392767;
 `;
-
 const BtnStyle = styled.a`
  color:black;
  font-weight: 900;
  font-size: 20px;
  font-family: Abel;
   margin: 10px;
-
-  `
+  `;
 
 export default function navigation() {
   return (

@@ -1,16 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
-
-
 const ImgStyledP = styled.img`
-  height: 400px;
-  object-fit:contain;
-  
- 
+height: 400px;
+object-fit:contain;
 `;
-
 
 const CardFooter = styled.footer`
 background-color:black;
@@ -19,9 +13,7 @@ text-align:center;
 font-family: Abel;
 font-size:30px;
 height: auto;
-
 `;
-
 
 const ImgBigContainer = styled.div`
     background-color:white;
@@ -31,23 +23,17 @@ const ImgBigContainer = styled.div`
     height: auto;
     border-radius:10px;
     margin:10px;
-   
     border:solid 1px;
     &:hover {transform:scale(1.08);}
 `;
 
-
 export default function Infographics(props) {
     return (
-        
-        
             <ImgBigContainer  className="card"> 
                 <ImgStyledP src={props.photo} className="card-img-top" alt="Responsive" />
                 <div className="body">
                 <CardFooter>Infographics</CardFooter>
                 </div>
             </ ImgBigContainer >
-        
-       
     )
 }
