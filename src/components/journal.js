@@ -22,10 +22,7 @@ text-align:center;
 font-family: Abel;
 font-size:30px;
 height: auto;
-
 `;
-
-
 
 const ImgBigContainer = styled.div`
     background-color:white;
@@ -36,8 +33,6 @@ const ImgBigContainer = styled.div`
     margin:10px;
     border:solid 1px;
     &:hover {transform:scale(1.08);}
-
-    
 `;
 
 

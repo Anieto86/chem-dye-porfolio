@@ -18,7 +18,6 @@ height: auto;
 const ImgBigContainer = styled.div`
     background-color:white;
     opacity:0.95;
-    /* float:left; */
     width: 30%;
     height: auto;
     border-radius:10px;
