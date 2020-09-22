@@ -22,7 +22,7 @@ height: auto;
 `;
 
 
-const ImgBigContainer = styled.div`
+const ImgBigContainer = styled.div`   
     background-color:white;
     opacity:0.95;
     /* float:left; */
@@ -37,15 +37,11 @@ const ImgBigContainer = styled.div`
 
 export default function Grapplications (props) {
     return (
-        
-        
             <ImgBigContainer  className="card"> 
                 <ImgStyledP src={props.photo} className="card-img-top" alt="Responsive" />
                 <div className="body">
                 <CardFooter>Grant Applications</CardFooter>
                 </div>
             </ ImgBigContainer >
-        
-       
     )
 }
