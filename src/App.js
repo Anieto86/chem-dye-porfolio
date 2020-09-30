@@ -82,6 +82,7 @@ function App() {
           <div className="container jurnalC" >
             <Route path="/graphAb">
               <Buttons />
+              <GraphAb photo={graphicalAbstract} />
               <GraphAb photo={peralta} />
               <GraphAb photo={oksdath2017} />
               <GraphAb photo={Ebert2020} />
@@ -91,6 +92,7 @@ function App() {
           <div className="container jurnalC" >
             <Route path="/journal">
               <Buttons />
+              <Journal photo={ScientificJournal} />
               <Journal photo={perrin2018a} />
               <Journal photo={perrin2018b} />
               <Journal photo={perrin2018c} />
@@ -103,6 +105,7 @@ function App() {
           <div className="container jurnalC" >
             <Route path="/infographics">
               <Buttons />
+              <Infographics photo={Infograph} />
               <Infographics photo={informarB} />
               <Infographics photo={informarC} />
               <Infographics photo={informarD} />
@@ -113,6 +116,7 @@ function App() {
           <div className="container jurnalC" >
             <Route path="/gapplications">
               <Buttons />
+              <GApplications  photo={GrantApp} />
               <GApplications  photo={organoids} />
             </Route>
           </div>
