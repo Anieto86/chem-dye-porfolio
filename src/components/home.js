@@ -70,14 +70,14 @@ export default function Home() {
                 <br />
                 <ContentStyle>
                     <h1 className="container" style={{ textAlign: "center" }}>What we do?</h1>
-                    <h1 className="container" style={{ textAlign: "center" }}>I'M AM SCIENTIS BY TRAINING AND ILLUSTRATOR BY HERAT</h1>
+                    <h1 className="container" style={{ textAlign: "center" }}>I'M AM SCIENTIS BY TRAINING AND ILLUSTRATOR BY HEART</h1>
                     <br />
                     <ServiceStyle className="container">
                         <div className="row">
                             <div className="col">
                                 <h2>Science Experience</h2>
                                 <br />
-                                <h4>I worked in the field of Neuroscience, where I studied neuronal development, growth factors, and molecular motors. I applied cellular and molecular techniques, and I worked with different animal models. I worked in Brain Cancer using ad main techniques organoids, stem cells and high-throughput platforms.</h4>
+                                <h4>I worked in the field of Neuroscience, where I studied neuronal development, growth factors, and molecular motors. I applied cellular and molecular techniques, and I worked with different animal models. I worked in Brain Cancer using as main techniques organoids, stem cells and high-throughput platforms.</h4>
                             </div>
                             <div className="col"></div>
                             <div className="col">
