@@ -32,12 +32,12 @@ const BtnStyle = styled.a`
 
 export default function navigation() {
   return (
-    <NavStyle className="navbar navba bg">
-      <LogoStyle src={logo} className="d-inline-block align-top" alt="" loading="lazy" />
+    <NavStyle className="navbar navba bg col-6 col-md-12">
+      <LogoStyle src={logo} className="d-inline-block align-top " alt="" loading="lazy" />
       <TxtStyle className="navbar-text"></TxtStyle>
-      <div className="container justify-content-end">
+      <div className="container justify-content-end ">
         <ul className="nav ">
-          <li className="nav-item">
+          <li className="nav-item ">
             <Link to="/">
               <BtnStyle className="nav-link active" to="/">Home</BtnStyle>
             </Link>

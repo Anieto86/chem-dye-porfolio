@@ -38,8 +38,6 @@ const ImgBigContainer = styled.div`
 
 export default function Journal(props) {
     return (
-        
-        
             <ImgBigContainer  className="card"> 
                 <ImgStyledP src={props.photo} className="card-img-top" alt="Responsive" />
                 <div className="body"> 
