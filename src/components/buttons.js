@@ -34,7 +34,7 @@ export default function Buttons() {
         <BtnStyle className='nav-link'>Animations</BtnStyle>
       </Link>
       <Link to={"/biorender"}>
-        <BtnStyle className='nav-link'>Biorender</BtnStyle>
+        <BtnStyle className='nav-link'>BioRender</BtnStyle>
       </Link>
       <Link to={"/journal"}>
         <BtnStyle className='nav-link'>Scientific Illustrations</BtnStyle>

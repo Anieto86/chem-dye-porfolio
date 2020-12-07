@@ -33,7 +33,7 @@ const TextStyle = styled.p`
 export default function About() {
   return (
     <div className='container'>
-      <TxtChem>Hi I'm Mariana Oksdath</TxtChem>
+      <TxtChem>Hi I'm Mariana Oksdath Mansilla</TxtChem>
       <TxtSubChem>Scientific illustrator</TxtSubChem>
       <br />
       <MarianaStyle src={mariana} alt='mariana' />

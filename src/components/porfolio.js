@@ -35,11 +35,11 @@ const CardFooter = styled.footer`
 
 export default function Porfolio(props) {
   return (
-    <div className='container'>
-      <ImgBigContainer style={{ width: "40%" }}>
-        <div className='body'>
+    <div className='container col-sm-8 col-md-8'>
+      <ImgBigContainer style={{ width: "40%" }} >
+        <div className='body '>
           <ImgStyledP
-            className='container'
+            className='container '
             src={props.photo}
             alt='Responsive'
           />

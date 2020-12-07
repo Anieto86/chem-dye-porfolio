@@ -72,11 +72,11 @@ function App() {
           <Route path='/porfolio'>
             <Buttons />
             <Porfolio photo={animation1} title='Animations' />
+            <Porfolio photo={biorender1} title='BioRender' />
             <Porfolio
               photo={graphicalAbstract}
               title='Scientific Illustrations'
             />
-            <Porfolio photo={biorender1} title='Biorender' />
             <Porfolio photo={Infograph} title='infographics' />
             <Porfolio photo={drawings1} title='Line Drawins' />
           </Route>
@@ -94,7 +94,7 @@ function App() {
               <Animations photo={animation1} />
             </Route>
           </div>
-          
+
           <div className='container jurnalC'>
             <Route path='/biorender'>
               <Buttons />

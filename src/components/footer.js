@@ -33,7 +33,6 @@ const LogoStyle = styled.img`
 
 const IconStyled = styled.a`
   color: White;
-
   width: 100%;
   height: auto;
 `;

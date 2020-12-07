@@ -34,7 +34,7 @@ export default function biorender(props) {
     <ImgBigContainer className='card'>
       <ImgStyledP src={props.photo} className='card-img-top' alt='Responsive' />
       <div className='body'>
-        <CardFooter>Biorender</CardFooter>
+        <CardFooter>BioRender</CardFooter>
       </div>
     </ImgBigContainer>
   );
