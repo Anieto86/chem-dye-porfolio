@@ -63,7 +63,7 @@ export default function Home() {
         <DescriptionStyle>
           <SmallTitle className='col-sm-12'>Providing services in </SmallTitle>
           <TitleStyled className='col-sm-12'>
-            SCIENTIFIC ILLUSTRATION IN MEDICAL AND BIOLOGY SCIENCE
+            SCIENTIFIC ILLUSTRATION IN MEDICAL AND BIOLOGICAL SCIENCE
           </TitleStyled>
         </DescriptionStyle>
         <br />
