@@ -78,7 +78,7 @@ function App() {
               photo={graphicalAbstract}
               title='Scientific Illustrations'
             />
-            <Porfolio photo={Infograph} title='infographics' />
+            <Porfolio photo={inforbeuron} title='infographics' />
             <Porfolio photo={drawings1} title='Line Drawins' />
           </Route>
 
