@@ -40,6 +40,7 @@ import sosa2017b from "./components/img/sosa2017b.jpg";
 import sosa2017c from "./components/img/sosa2017c.jpg";
 
 //?import  Infographic imgs
+import inforbeuron  from "./components/img/Oksdath-et-al-2016-V2.jpg";
 import informarB from "./components/img/informarB.png";
 import informarC from "./components/img/informarC.png";
 import informarD from "./components/img/informarD.png";
@@ -126,6 +127,7 @@ function App() {
           <div className='container jurnalC'>
             <Route path='/infographics'>
               <Buttons />
+              <Infographics photo={inforbeuron}/>
               <Infographics photo={Infograph} />
               <Infographics photo={informarB} />
               <Infographics photo={informarC} />
