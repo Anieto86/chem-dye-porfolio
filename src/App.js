@@ -40,12 +40,13 @@ import sosa2017b from "./components/img/sosa2017b.jpg";
 import sosa2017c from "./components/img/sosa2017c.jpg";
 
 //?import  Infographic imgs
-import inforbeuron  from "./components/img/Oksdath-et-al-2016-V2.jpg";
+import inforbeuron from "./components/img/Oksdath-et-al-2016-V2.jpg";
 import informarB from "./components/img/informarB.png";
 import informarC from "./components/img/informarC.png";
 import informarD from "./components/img/informarD.png";
 import informarE from "./components/img/informarE.png";
 import organoids from "./components/img/organoids-shapes.jpg";
+import infoGlobalWarming from "./components/img/Inforgraphic_Global-warming.jpg";
 
 //? Biorender img
 import biorender1 from "./components/img/01_IN_UTERO_ELECTROPORATION_biorender.png";
@@ -62,91 +63,99 @@ import animation1 from "./components/img/Animacion_Mariana_Oksdath.gif";
 
 function App() {
   return (
-    <div className='page-container'>
-      <div className='content-wrap'>
-        <Router>
-          <Navigation />
-          <Route exact path='/'>
-            <Home />
-          </Route>
+    <div>
+      <Router>
+        <div className='row'>
+          <div className='col-lg-12 col-md-8 col-sm-8'>
+            <Navigation />
+          </div>
+        </div>
 
-          <Route path='/porfolio'>
+        <Route exact path='/'>
+          <div className='row'>
+            <div className='col-lg-12 col-md-12 col-sm-10'>
+              <Home />
+            </div>
+          </div>
+        </Route>
+
+        <Route path='/porfolio'>
+          <div className='row'>
+            <div className='col-lg-12 col-md-12 col-sm-10'>
+              <Porfolio photo={animation1} title='Animations' />
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-lg-12 col-md-6 col-sm-10'>
+              <Buttons />
+            </div>
+          </div>
+        </Route>
+
+        <Route path='/about'>
+          <About />
+        </Route>
+
+        <Route path='/testimonials'>
+          <Testimonials />
+        </Route>
+        <div className='container jurnalC'>
+          <Route path='/animations'>
             <Buttons />
-            <Porfolio photo={animation1} title='Animations' />
-            <Porfolio photo={biorender1} title='BioRender' />
-            <Porfolio
-              photo={graphicalAbstract}
-              title='Scientific Illustrations'
-            />
-            <Porfolio photo={inforbeuron} title='infographics' />
-            <Porfolio photo={drawings1} title='Line Drawins' />
+            <Animations photo={animation1} />
           </Route>
+        </div>
 
-          <Route path='/about'>
-            <About />
+        <div className='container jurnalC'>
+          <Route path='/biorender'>
+            <Buttons />
+            <Biorender photo={biorender1} />
+            <Biorender photo={biorender2} />
+            <Biorender photo={biorender3} />
           </Route>
+        </div>
 
-          <Route path='/testimonials'>
-            <Testimonials />
+        <div className='container jurnalC'>
+          <Route path='/journal'>
+            <Buttons />
+            <Journal photo={ScientificJournal} />
+            <Journal photo={perrin2018a} />
+            <Journal photo={perrin2018b} />
+            <Journal photo={perrin2018c} />
+            <Journal photo={sosa2017a} />
+            <Journal photo={sosa2017b} />
+            <Journal photo={sosa2017c} />
+            <GraphAb photo={graphicalAbstract} />
+            <GraphAb photo={peralta} />
+            <GraphAb photo={oksdath2017} />
+            <GraphAb photo={Ebert2020} />
+            <GApplications photo={GrantApp} />
+            <GApplications photo={organoids} />
           </Route>
-          <div className='container jurnalC'>
-            <Route path='/animations'>
-              <Buttons />
-              <Animations photo={animation1} />
-            </Route>
-          </div>
+        </div>
 
-          <div className='container jurnalC'>
-            <Route path='/biorender'>
-              <Buttons />
-              <Biorender photo={biorender1} />
-              <Biorender photo={biorender2} />
-              <Biorender photo={biorender3} />
-            </Route>
-          </div>
+        <div className='container jurnalC'>
+          <Route path='/infographics'>
+            <Buttons />
+            <Infographics photo={infoGlobalWarming} />
+            <Infographics photo={inforbeuron} />
+            <Infographics photo={Infograph} />
+            <Infographics photo={informarB} />
+            <Infographics photo={informarC} />
+            <Infographics photo={informarD} />
+            <Infographics photo={informarE} />
+          </Route>
+        </div>
 
-          <div className='container jurnalC'>
-            <Route path='/journal'>
-              <Buttons />
-              <Journal photo={ScientificJournal} />
-              <Journal photo={perrin2018a} />
-              <Journal photo={perrin2018b} />
-              <Journal photo={perrin2018c} />
-              <Journal photo={sosa2017a} />
-              <Journal photo={sosa2017b} />
-              <Journal photo={sosa2017c} />
-              <GraphAb photo={graphicalAbstract} />
-              <GraphAb photo={peralta} />
-              <GraphAb photo={oksdath2017} />
-              <GraphAb photo={Ebert2020} />
-              <GApplications photo={GrantApp} />
-              <GApplications photo={organoids} />
-            </Route>
-          </div>
-
-          <div className='container jurnalC'>
-            <Route path='/infographics'>
-              <Buttons />
-              <Infographics photo={inforbeuron}/>
-              <Infographics photo={Infograph} />
-              <Infographics photo={informarB} />
-              <Infographics photo={informarC} />
-              <Infographics photo={informarD} />
-              <Infographics photo={informarE} />
-            </Route>
-          </div>
-
-
-          <div className='container jurnalC'>
-            <Route path='/drawings'>
-              <Buttons />
-              <Drawings photo={drawings1} />
-              <Drawings photo={drawings2} />
-              <Drawings photo={drawings3} />
-            </Route>
-          </div>
-        </Router>
-      </div>
+        <div className='container jurnalC'>
+          <Route path='/drawings'>
+            <Buttons />
+            <Drawings photo={drawings1} />
+            <Drawings photo={drawings2} />
+            <Drawings photo={drawings3} />
+          </Route>
+        </div>
+      </Router>
       <Footer />
     </div>
   );

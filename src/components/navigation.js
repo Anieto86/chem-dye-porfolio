@@ -10,6 +10,7 @@ import logo from './img/CD_SI.png'
 //Style
 const NavStyle = styled.nav`
   height: auto;
+  
 `;
 const LogoStyle = styled.img`
   height: 100px;

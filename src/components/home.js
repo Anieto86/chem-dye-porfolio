@@ -45,12 +45,6 @@ const ServiceStyle = styled.div`
   font-size: 5px;
 `;
 
-const MsgStyled = styled.p`
-  font-family: Abel;
-  font-size: 25px;
-  text-align: center;
-  margin: 20px 20px 20px 20px;
-`;
 
 const LiStyled = styled.li`
   font-size: 20px;
@@ -103,16 +97,6 @@ export default function Home() {
           </ServiceStyle>
           <br />
           <br />
-          <MsgStyled className='container col-sm-10'>
-        
-            "ChemDye" born with the idea to help researchers to achieve their
-            goals using the powerful tool of visual communication. As a
-            scientist myself, I understood that time and resources are essential
-            in research, let’s not waste it. I will put all my knowledge in
-            chemistry and biology to create the right image of your
-            investigation in a short time frame.
-           
-          </MsgStyled>
         </ContentStyle>
       </div>
     </div>

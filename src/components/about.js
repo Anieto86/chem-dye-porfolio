@@ -44,8 +44,19 @@ export default function About() {
       <TxtSubChem>About myself</TxtSubChem>
       <br />
       <TextStyle>
-      Hi, my name is Mariana Oksdath Mansilla. I am a scientific illustrator with a BS. Chem (Hons), a PhD in neuroscience specialised on neuronal development, and a postdoc in brain cancer where I worked with cerebral organoid models.I am a scientist by training and an illustrator at heart. Art in all their expressions has been part of my life since I can remember, music, painting, illustrations. An inner curiosity for art, visual communication, and science drove me to create “ChemDye”. My job is to transform complex science into highly accurate and compelling images, with one goal, improve science communication as a whole. I am currently based on Adelaide, Australia working with scientists around the globe. I help them on their images for journal publications, talks, posters including cool infographics, grant and fellowship applications. I help researchers to tell their story, and I love it.
-
+        Hi, my name is Mariana Oksdath Mansilla. I am a scientific illustrator
+        with a BS. Chem (Hons), a PhD in neuroscience specialised on neuronal
+        development, and a postdoc in brain cancer where I worked with cerebral
+        organoid models.I am a scientist by training and an illustrator at
+        heart. Art in all their expressions has been part of my life since I can
+        remember, music, painting, illustrations. An inner curiosity for art,
+        visual communication, and science drove me to create “ChemDye”. My job
+        is to transform complex science into highly accurate and compelling
+        images, with one goal, improve science communication as a whole. I am
+        currently based on Adelaide, Australia working with scientists around
+        the globe. I help them on their images for journal publications, talks,
+        posters including cool infographics, grant and fellowship applications.
+        I help researchers to tell their story, and I love it.
       </TextStyle>
     </div>
   );

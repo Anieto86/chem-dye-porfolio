@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const BtnStyle = styled.button`
-  background-color: #392767;
-  color: #66cccc;
+  /* background-color: #c7c6c6; */
+  color: #21262e;
   border-radius: 20px;
-  margin: 5px;
-  border: 3px solid #66cccc;
+  margin: 7px;
+    border: 1px solid #21262e;
   &:hover {
-    background-color: #66cccc;
-    color: #392767;
-    border: 3px solid #392767;
+    background-color: #21262e;
+    color: #c7c6c6;
+    font-weight: bold;
   }
 `;
 

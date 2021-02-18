@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import monicaG from "./img/Monica Garcia_testimonials.jpg";
 import MarianaP from "./img/MarianaPeralta_testimomials.jpg";
+import ConstanzaF from './img/Constanza-Feliziani.jpg';
+import BolloM  from './img/Mariana-Bollo.jpg';
 
 const Title = styled.h1`
   color: #392767;
@@ -14,7 +16,7 @@ const Title = styled.h1`
 `;
 const SubTitle = styled.h3`
   color: #392767;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   margin-top: 30px;
   font-family: Abel;
@@ -30,8 +32,10 @@ const TextStyle = styled.p`
 `;
 
 const ImasStyle = styled.img`
-  width: 100px;
+  width: 80px;
+  height: 80px;
   float: right;
+  object-fit: cover;
 `;
 
 export default function Testimonials() {
@@ -40,7 +44,7 @@ export default function Testimonials() {
       <Title>Testimonials</Title>
 
       <div className='container'>
-        <ImasStyle src={monicaG} alt='monica' />
+        <ImasStyle src={MarianaP} alt='monica' />
         <SubTitle>
           Working with Mariana was a very pleasant and efficient
           experience. ChemDye knew how to transform our ideas and simple
@@ -55,7 +59,7 @@ export default function Testimonials() {
       </div>
 
       <div className='container'>
-        <ImasStyle src={MarianaP} alt='mariana' />
+        <ImasStyle src={monicaG} alt='mariana' />
         <SubTitle>
           It has been a pleasing experience working with Mariana. She provides a
           fast and professional image designing service. She is patient enough
@@ -64,7 +68,34 @@ export default function Testimonials() {
           recommend her.
         </SubTitle>
         <TextStyle>
-          Dra. Mónica C. García | (UNITEFA)-CONICET-UNC | Córdoba Argentina{" "}
+          Dra. Mónica C. García | (UNITEFA)-CONICET-UNC | Córdoba Argentina
+        </TextStyle>
+      </div>
+
+      <div className='container'>
+        <ImasStyle src={ConstanzaF} alt='mariana' />
+        <SubTitle>
+          Working with Mariana was an amazing experience. She knew how to
+          understand the message that we wanted to capture in the images. She
+          was very friendly and efficient at the same time. I would definitely
+          recommend the service for illustration for scientific publication .
+        </SubTitle>
+        <TextStyle>
+          Dr. Constanza Feliziani - Associate Researcher, Instituto Ferreyra,
+          Cordoba-Argentina.
+        </TextStyle>
+      </div>
+
+      <div className='container'>
+        <ImasStyle src={BolloM} alt='mariana' />
+        <SubTitle>
+          My research group contacted Mariana to make a drawing for a paper. The
+          experience was very enriching. She transformed a simple graphic into a
+          complex illustration that clearly reflected the conclusion of our
+          work. I fully recommend Mariana for scientific illustrations.
+        </SubTitle>
+        <TextStyle>
+          Dr. Mariana Bollo, Instituto Ferreyra, Cordoba-Argentina
         </TextStyle>
       </div>
     </div>
