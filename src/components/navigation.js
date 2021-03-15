@@ -58,6 +58,11 @@ export default function navigation() {
               <BtnStyle className="nav-link">Testimonial</BtnStyle>
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/blog">
+              <BtnStyle className="nav-link">Blog</BtnStyle>
+            </Link>
+          </li>
         </ul>
       </div>
     </NavStyle>

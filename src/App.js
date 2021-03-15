@@ -60,6 +60,7 @@ import drawings3 from "./components/img/02_Pies_Mariana_Oksdath_drawins.jpg";
 
 //?Animations
 import animation1 from "./components/img/Animacion_Mariana_Oksdath.gif";
+import { Blog } from "./components/Blog";
 
 function App() {
   return (
@@ -99,6 +100,12 @@ function App() {
         <Route path='/testimonials'>
           <Testimonials />
         </Route>
+
+        
+        <Route path='/blog'>
+          <Blog />
+        </Route>
+
         <div className='container jurnalC'>
           <Route path='/animations'>
             <Buttons />
