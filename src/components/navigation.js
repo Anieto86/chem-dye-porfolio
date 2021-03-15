@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 //logo
-import logo from './img/CD_SI.png'
+import logo from '../img/CD_SI.png'
 
 //Style
 const NavStyle = styled.nav`
@@ -23,7 +23,9 @@ const TxtStyle = styled.h1`
   font-family: Abel;
   color: #392767;
 `;
-const BtnStyle = styled.a`
+const BtnStyle = styled.button`
+background-color: transparent;
+ border-style:none;
  color:black;
  font-weight: 900;
  font-size: 20px;

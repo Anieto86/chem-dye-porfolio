@@ -10,7 +10,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 //logo
-import logo from "./img/CD_SI.png";
+import logo from "../img/CD_SI.png";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const FooterStyle = styled.div`

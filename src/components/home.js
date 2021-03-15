@@ -17,7 +17,7 @@ const TitleStyled = styled.h1`
   font-size: 50px;
 `;
 
-const DescriptionStyle = styled.h2`
+const DescriptionStyle = styled.div`
   /* background: rgb(68,213,199);
 background: linear-gradient(77deg, rgba(68,213,199,1) 48%, rgba(71,204,131,1) 88%); */
   background: url("../components/img/Background.jpg");

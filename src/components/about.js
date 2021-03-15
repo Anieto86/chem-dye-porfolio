@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 //testing
 
-import mariana from "./img/mariana.jpg";
+import mariana from "../img/mariana.jpg";
 
 const MarianaStyle = styled.img`
   width: 25%;
