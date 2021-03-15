@@ -19,6 +19,7 @@ import Buttons from "./components/buttons.js";
 import Biorender from "./components/biorender.js";
 import Drawings from "./components/drawinsg.js";
 import Animations from "./components/animations.js";
+import { Blog } from "./components/Blog";
 
 //?Import Img in Portal
 import graphicalAbstract from "./components/img/Graphical_Abstract_Monica_Garcia.png";
@@ -60,7 +61,6 @@ import drawings3 from "./components/img/02_Pies_Mariana_Oksdath_drawins.jpg";
 
 //?Animations
 import animation1 from "./components/img/Animacion_Mariana_Oksdath.gif";
-import { Blog } from "./components/Blog";
 
 function App() {
   return (
