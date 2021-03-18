@@ -23,7 +23,7 @@ const SubTitle = styled.h3`
   margin-top: 30px;
   font-family: Abel;
   background-color: white;
-  /* opacity: 0.8; */
+ 
 `;
 const TextStyle = styled.p`
   font-weight: bold;
@@ -45,7 +45,7 @@ export default function Testimonials() {
     <div className='container'>
       {console.log(testimonials)}
       <Title>Testimonials</Title>
-      {/* //<ImasStyle src={monicaG} alt='reseach img' /> */}
+      
       {testimonials.map((testimonial, i) => (
       <div className='container' key={i}>
         <ImasStyle src={testimonial.img} alt='reseach img' />

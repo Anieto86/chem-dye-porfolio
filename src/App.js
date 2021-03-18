@@ -19,7 +19,7 @@ import Buttons from "./components/buttons.js";
 import Biorender from "./components/biorender.js";
 import Drawings from "./components/drawinsg.js";
 import Animations from "./components/animations.js";
-import { Blog } from "./components/Blog";
+import Blog from "./components/Blog.js";
 
 //?Import Img in Portal
 import graphicalAbstract from "./img/Graphical_Abstract_Monica_Garcia.png";
@@ -101,7 +101,6 @@ function App() {
           <Testimonials />
         </Route>
 
-        
         <Route path='/blog'>
           <Blog />
         </Route>

@@ -38,3 +38,9 @@ body {
   justify-content:space-around;
   flex-wrap: wrap;
 }
+
+/* .Blog{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap: wrap ;
+} */
