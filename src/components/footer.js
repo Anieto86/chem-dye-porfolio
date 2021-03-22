@@ -33,8 +33,8 @@ const LogoStyle = styled.img`
 
 const IconStyled = styled.a`
   color: White;
-  width: 100%;
-  height: auto;
+  margin:20px;
+  font-size: 30px;
 `;
 
 const TextStyled = styled.p`
@@ -51,8 +51,8 @@ export default function Footer() {
     <FooterStyle className='main-footer col-sm-12'>
       <div className='container  col-sm-8'>
         <div className='row'>
-          <div className='col-sm-3 col-md-3'>
-            <h4>HOW CAN I HELP ?</h4>
+          <div className='container col-4' style={{textAlign : "center"}}>
+            <h4>HOW CAN I HELP?</h4>
             <IconContainer className='container'>
               <IconStyled href={"mailto:si.chemdye@gmail.com"}>
              
@@ -62,11 +62,11 @@ export default function Footer() {
             <br />
             <h6>Adelaide | SA | Australia</h6>
           </div>
-          <div className='col-sm-6 col-md-6'></div>
-          <div className='col-sm-3 col-md-3'>
+          <div className='col-4'></div>
+          <div className='container col-4' style={{textAlign : "center"}}>
             <h4>WORK IN PROGRESS</h4>
             <IconContainer className='container  col-sm-12'>
-              <IconStyled href={"/"}>
+              <IconStyled href={"https://twitter.com/mari_sciart?lang=es"}>
                 <FontAwesomeIcon icon={faTwitter} />
               </IconStyled>
               <IconStyled href={"https://www.instagram.com/chemdye_si/"}>

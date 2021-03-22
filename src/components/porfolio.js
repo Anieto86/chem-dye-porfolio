@@ -58,7 +58,6 @@ const TitleStyled = styled.h1`
   margin-top: 1rem;
 `;
 
-
 const MsgStyled = styled.p`
   font-family: Abel;
   font-size: 25px;
@@ -70,14 +69,17 @@ export default function Porfolio() {
   return (
     <div>
       <ContentStyle className='row'>
-        <TitleStyled className='col-4'>Welcome to our Gallery</TitleStyled>
+        <TitleStyled className='col-4'>Welcome to my Gallery</TitleStyled>
         <div className='col-1'></div>
-        <MsgStyled className='col-6'>   "ChemDye" born with the idea to help researchers to achieve their
-            goals using the powerful tool of visual communication. As a
-            scientist myself, I understood that time and resources are essential
-            in research, let’s not waste it. I will put all my knowledge in
-            chemistry and biology to create the right image of your
-            investigation in a short time frame.</MsgStyled>
+        <MsgStyled className='col-6'>
+          {" "}
+          "ChemDye" born with the idea to help researchers to achieve their
+          goals using the powerful tool of visual communication. As a scientist
+          myself, I understood that time and resources are essential in
+          research, let’s not waste it. I will put all my knowledge in chemistry
+          and biology to create the right image of your investigation in a short
+          time frame.
+        </MsgStyled>
       </ContentStyle>
     </div>
   );

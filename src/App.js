@@ -20,6 +20,10 @@ import Biorender from "./components/biorender.js";
 import Drawings from "./components/drawinsg.js";
 import Animations from "./components/animations.js";
 import Blog from "./components/Blog.js";
+import Txtblog4 from "./components/Txtblog4.js";
+import Txtblog3 from "./components/Txtblog3.js";
+import Txtblog2 from "./components/Txtblog2.js";
+import Txtblog1 from "./components/Txtblog1.js";
 
 //?Import Img in Portal
 import graphicalAbstract from "./img/Graphical_Abstract_Monica_Garcia.png";
@@ -101,9 +105,11 @@ function App() {
           <Testimonials />
         </Route>
 
-        <Route path='/blog'>
-          <Blog />
-        </Route>
+        <Route exact path='/blog' component={Blog}/>
+        <Route exact path='/blog/txt4' component={Txtblog4}/>
+        <Route exact path='/blog/txt3' component={Txtblog3}/>
+        <Route exact path='/blog/txt2' component={Txtblog2} />
+        <Route exact path='/blog/txt1' component={Txtblog1}/>
 
         <div className='container jurnalC'>
           <Route path='/animations'>
