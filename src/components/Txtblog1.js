@@ -48,9 +48,11 @@ export default function Txtblog1() {
         <p>
           Welcome to my blog, I&rsquo;m Mariana, a scientific designer and
           illustrator. In this space I will be discussing topics related to
-          science communications. Are you in? Let&apos;s do this.&nbsp; I
-          decided to start with a more personal story, where I will guide you on
-          what it means, at least to me, to change careers. &nbsp;
+          science communications. Are you in? Let&apos;s do this.&nbsp;
+          <p>
+            I decided to start with a more personal story, where I will guide
+            you on what it means, at least to me, to change careers. &nbsp;
+          </p>
         </p>
         <p>
           <p

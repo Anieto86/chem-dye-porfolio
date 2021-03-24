@@ -12,7 +12,7 @@ const BlogStyled = styled.div`
 `;
 
 const ImageStyled = styled.img`
-  border-bottom: 10px solid;
+  border-bottom: 6px solid;
   border-image: linear-gradient(
       90deg,
       rgba(57, 39, 103, 1) 66%,
@@ -26,13 +26,15 @@ const ImageStyled = styled.img`
 
 const TitleStyle = styled.p`
   color: #392767;
-  font-family: barlow;
-  font-size: 16px;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
 `;
 
 const SubTitleStyle = styled.p`
   font-size: 12px;
   font-family: arial;
+  
 `;
 
 export default function Blog() {

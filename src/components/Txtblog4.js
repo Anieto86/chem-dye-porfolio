@@ -78,7 +78,7 @@ export default function Txtblog4() {
           I hope that at this point, I have already convinced you about the
           importance of paying attention to the graphical abstract because
           I&rsquo;m about to give you some killers tips to make your next GA
-          shine.&nbsp;
+          shine
         </p>
 
         <strong
