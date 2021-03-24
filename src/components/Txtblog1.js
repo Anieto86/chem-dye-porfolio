@@ -8,6 +8,12 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
+const TxtContainer = styled.div`
+  margin: 1rem;
+  padding: 50px;
+  border: 1px solid #392767;
+`;
+
 const IconContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -21,21 +27,30 @@ const IconStyled = styled.a`
 
 export default function Txtblog1() {
   return (
-    <div>
+    <div className='container'>
       <br />
-      <div className='container'>
+      <TxtContainer>
         <h6 style={{ textAlign: "right" }}>By Mariana Oksdath Mansilla</h6>
-        <h6 style={{ textAlign: "right" }}>6 min reading</h6>
+        <h6 style={{ textAlign: "right" }}>2 min reading</h6>
         <br />
+        <h2
+          style={{
+            textAlign: "center",
+            color: "#392767",
+            fontFamily: "Arial, Helvetica, sans-serif",
+          }}
+        >
+          Thinking outside the box{" "}
+        </h2>
+        <br />
+        <br />
+
         <p>
           Welcome to my blog, I&rsquo;m Mariana, a scientific designer and
           illustrator. In this space I will be discussing topics related to
-          science communications. Are you in? Let&apos;s do this.&nbsp;
-        </p>
-
-        <p>
-          I decided to start with a more personal history, where I will guide
-          you on what it means to change careers.&nbsp;
+          science communications. Are you in? Let&apos;s do this.&nbsp; I
+          decided to start with a more personal story, where I will guide you on
+          what it means, at least to me, to change careers. &nbsp;
         </p>
         <p>
           <p
@@ -62,12 +77,12 @@ export default function Txtblog1() {
           Many of us know when you are in a situation that is not fulfilling,
           where something is not quite right. But changing that reality
           doesn&rsquo;t seem like a possibility. In fact, for many years, in my
-          case, it was just a pretty dream. I see now that during all those
+          case, it was just a pretty dream. Now I see that during all those
           years and all my professional experiences, I was walking to the place
           that I am now. Every step, right or wrong, helped me decide to look
           for a profession that meets my expectations. My first step was
           precisely that, take the decision that I want to do something else
-          with my professional life.&nbsp;
+          with my professional life.
         </p>
         <p>
           In the beginning, I was completely lost, but I became more curious and
@@ -76,33 +91,33 @@ export default function Txtblog1() {
           &lsquo;Carreras Cient&iacute;ficas Alternativas&rsquo; (a podcast only
           in Spanish). The idea is to receive, in a passive way, information
           about professional transformation and start meeting people or programs
-          that could help you. &nbsp;
+          that could help you.&nbsp;{" "}
         </p>
         <p>
-          There isn&rsquo;t magic, it is a lot of hard work, but it is so worthy
-          even if you are not sure if it is going to work, that by the way, you
-          don&apos;t know. It is crucial to learn about yourself, who you are
-          professional, your skills, what you enjoy the most, and do not forget
-          your values. You need to be in a place that aligns and combines all of
-          that. Then, you should open your world to see what else it&apos;s out
-          there, what could you possibly do with all that set of skills that
+          There isn&rsquo;t magic, it is a lot of hard work, but it is so worth
+          it even if you are not sure if it is going to work, that by the way,
+          you don't know. It is crucial to learn about yourself. Who are you
+          professionally, your skills, what you enjoy the most, and do not
+          forget your values. You need to be in a place that aligns and combines
+          all of that. Then, you should open your world to see what else it's
+          out there, what could you possibly do with all that set of skills that
           make you, you. Finally, be human and connect with people that share
           your same passions and values. People that are doing your dream job,
           understanding their path, learning from their experiences.
         </p>
         <p>
           This is a long journey; don&rsquo;t try to rush things. Take your time
-          to think and digest all the information that you get. Make a plan,
-          design a strategy, think small. It&apos;s easy to get trapped in big
-          dreams, ideas that could take a lifetime, and that could be very
-          demotivating. Setting up short-term goals with achievable tasks will
-          give you the sense that you are moving forward because you are getting
-          stuff done.
+          to think and digest all the information that you get. Plan, design a
+          strategy, think small. It's easy to get trapped in big dreams, ideas
+          that could take a lifetime, and that could be very demotivating.
+          Setting up short-term goals with achievable tasks will give you the
+          sense that you are moving forward because you are getting stuff done.
         </p>
         <p>
           I love making lists, so I did this one for you to get started in your
           next career change. You got this:
         </p>
+
         <ol>
           <li style={{ color: "#392767", fontWeight: "bold" }}>
             <span> Decide to change</span>
@@ -132,7 +147,8 @@ export default function Txtblog1() {
             </span>
           </li>
         </ol>
-      </div>
+      </TxtContainer>
+
       <IconContainer className='container'>
         <IconStyled href={"/"}>
           <FontAwesomeIcon icon={faTwitter} />
