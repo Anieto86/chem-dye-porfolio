@@ -15,30 +15,30 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const FooterStyle = styled.div`
   background-color: black;
-  background-size: 100%;
   width: auto;
-  padding: 3rem;
+  padding: 2rem;
   position: relative;
   bottom: 0;
   color: white;
   height: auto;
   margin-top: 10rem;
-  opacity: 0.9;
 `;
 
 const LogoStyle = styled.img`
-  height: 120px;
-  width: 140px;
+  height: 80px;
+  width: auto;
 `;
 
 const IconStyled = styled.a`
   color: White;
-  margin:20px;
-  font-size: 30px;
+  margin: 20px;
+  font-size: 20px;
 `;
 
 const TextStyled = styled.p`
   text-align: center;
+  font-family: Abel;
+  font-size: 100%;
 `;
 
 const IconContainer = styled.div`
@@ -48,53 +48,49 @@ const IconContainer = styled.div`
 
 export default function Footer() {
   return (
-    <FooterStyle className='main-footer col-sm-12'>
-      <div className='container  col-sm-8'>
-        <div className='row'>
-          <div className='container col-4' style={{textAlign : "center"}}>
-            <h4>HOW CAN I HELP?</h4>
-            <IconContainer className='container'>
-              <IconStyled href={"mailto:si.chemdye@gmail.com"}>
-             
-                <FontAwesomeIcon icon={faEnvelope} />
-              </IconStyled>
-            </IconContainer>
-            <br />
-            <h6>Adelaide | SA | Australia</h6>
-          </div>
-          <div className='col-4'></div>
-          <div className='container col-4' style={{textAlign : "center"}}>
-            <h4>WORK IN PROGRESS</h4>
-            <IconContainer className='container  col-sm-12'>
-              <IconStyled href={"https://twitter.com/mari_sciart?lang=es"}>
-                <FontAwesomeIcon icon={faTwitter} />
-              </IconStyled>
-              <IconStyled href={"https://www.instagram.com/chemdye_si/"}>
-                <FontAwesomeIcon icon={faInstagram} />
-              </IconStyled>
-              <IconStyled
-                href={"https://www.linkedin.com/in/mariana-oksdath-mansilla/"}
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </IconStyled>
-            </IconContainer>
-          </div>
+    <FooterStyle>
+      <div className='row'>
+        <div className='container col-4' style={{ textAlign: "center" }}>
+          <h5>HOW CAN I HELP?</h5>
+          <IconContainer>
+            <IconStyled href={"mailto:si.chemdye@gmail.com"}>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </IconStyled>
+          </IconContainer>
+        </div>
+
+        <div
+          className='col-4'
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <LogoStyle
+            src={logo}
+            className='d-inline-block align-top'
+            alt=''
+            loading='lazy'
+          />
+        </div>
+
+        <div className='container col-4' style={{ textAlign: "center" }}>
+          <h5>WORK IN PROGRESS</h5>
+          <IconContainer className='container  col-sm-12'>
+            <IconStyled href={"https://twitter.com/mari_sciart?lang=es"}>
+              <FontAwesomeIcon icon={faTwitter} />
+            </IconStyled>
+            <IconStyled href={"https://www.instagram.com/chemdye_si/"}>
+              <FontAwesomeIcon icon={faInstagram} />
+            </IconStyled>
+            <IconStyled
+              href={"https://www.linkedin.com/in/mariana-oksdath-mansilla/"}
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </IconStyled>
+          </IconContainer>
         </div>
       </div>
-      <br />
-      <div
-        className='containe  col-sm-12'
-        style={{ display: "flex", justifyContent: "center" }}
-      >
-        <LogoStyle
-          src={logo}
-          className='d-inline-block align-top'
-          alt=''
-          loading='lazy'
-        />
-      </div>
-      <br />
-      <TextStyled>© 2020 | Alvaro Nieto | Web developer </TextStyled>
+      <TextStyled>
+        © 2020 | Alvaro Nieto | Web developer | Adelaide | Australia
+      </TextStyled>
     </FooterStyle>
   );
 }

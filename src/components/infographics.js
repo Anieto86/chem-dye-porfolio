@@ -1,38 +1,47 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
+
+import portfolio from "../data/dataPorfolio";
 
 const ImgStyledP = styled.img`
-height: 400px;
-object-fit:contain;
+background-color:white;
+  height: 400px;
+  object-fit: contain; 
+
 `;
 
-const CardFooter = styled.footer`
-background-color:black;
-color:yellow;
-text-align:center;
-font-family: Abel;
-font-size:30px;
-height: auto;
+const ImgContainer = styled.div`
+  width: 30%;
+  height: auto;
+  border: 1px solid #392767;
+  margin: 3px;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+`;
+const PortContainer = styled.div`
+margin-top: 5rem;
+ 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* align-content :stretch; */
+
 `;
 
-const ImgBigContainer = styled.div`
-    background-color:white;
-    opacity:0.95;
-    width: 30%;
-    height: auto;
-    border-radius:10px;
-    margin:10px;
-    border:solid 1px;
-    &:hover {transform:scale(1.08);}
-`;
-
-export default function Infographics(props) {
-    return (
-            <ImgBigContainer  className="card"> 
-                <ImgStyledP src={props.photo} className="card-img-top" alt="Responsive" />
-                <div className="body">
-                <CardFooter>Infographics</CardFooter>
-                </div>
-            </ ImgBigContainer>
-    )
+export default function Infographic(props) {
+  return (
+    <PortContainer className='container'>
+      {portfolio.map((port, i) => (
+        <ImgContainer key={i}>
+          <ImgStyledP
+            src={port.img}
+            className='card-img-top'
+            alt='Responsive'
+          />
+        </ImgContainer>
+      ))}
+    </PortContainer>
+  );
 }

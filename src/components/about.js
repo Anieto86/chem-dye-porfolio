@@ -27,10 +27,11 @@ const TxtSubChem = styled.h2`
   text-align: center;
 `;
 const TextStyle = styled.p`
-  font-weight: bold;
+  /* font-weight: bold; */
   font-family: Abel;
-  font-size: 30px;
+  font-size: 150%;;
   background-color: white;
+  line-height: 1.2;
 `;
 export default function About() {
   return (

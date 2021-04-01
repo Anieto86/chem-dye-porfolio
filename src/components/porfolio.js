@@ -40,10 +40,8 @@ const ContentStyle = styled.div`
     rgba(14, 205, 208, 1) 31%,
     rgba(253, 224, 45, 1) 100%
   );
-  font-family: Abel;
-  height: auto;
+
   color: white;
-  padding: 40px;
   width: auto;
   height: auto;
   margin-top: 3rem;
@@ -51,28 +49,29 @@ const ContentStyle = styled.div`
 
 const TitleStyled = styled.h1`
   font-family: Abel;
-  color: white;
   text-align: center;
-  font-size: 75px;
+  font-size: 300%;
   font-weight: bold;
-  margin-top: 1rem;
+  margin: 3%;
 `;
 
 const MsgStyled = styled.p`
   font-family: Abel;
-  font-size: 25px;
+  font-size: 120%;
   text-align: justify;
-  margin: 20px 20px 20px 20px;
+  line-height: 1.2;
+  margin: 3%;
 `;
 
 export default function Porfolio() {
   return (
     <div>
       <ContentStyle className='row'>
-        <TitleStyled className='col-4'>Welcome to my Gallery</TitleStyled>
-        <div className='col-1'></div>
-        <MsgStyled className='col-6'>
-          {" "}
+        <div className='col-3'></div>
+        <TitleStyled className='container col-3'>
+          Welcome to my Gallery
+        </TitleStyled>
+        <MsgStyled className='container col-3'>
           "ChemDye" born with the idea to help researchers to achieve their
           goals using the powerful tool of visual communication. As a scientist
           myself, I understood that time and resources are essential in
@@ -80,6 +79,7 @@ export default function Porfolio() {
           and biology to create the right image of your investigation in a short
           time frame.
         </MsgStyled>
+        <div className='col-3'></div>
       </ContentStyle>
     </div>
   );

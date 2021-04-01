@@ -8,6 +8,8 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+
 const TxtContainer = styled.div`
   margin: 1rem;
   padding: 50px;
@@ -181,7 +183,7 @@ export default function Txtblog4() {
       </TxtContainer>
 
       <IconContainer className='container'>
-        <IconStyled href={"https://twitter.com/mari_sciart?lang=es"}>
+        <IconStyled href={"https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A3000%2Fblog%2Ftxt4"}>
           <FontAwesomeIcon icon={faTwitter} />
         </IconStyled>
         <IconStyled href={"https://www.instagram.com/chemdye_si/"}>
@@ -192,7 +194,12 @@ export default function Txtblog4() {
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </IconStyled>
+
+        <IconStyled href={"https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/blog/txt4"} >
+          <FontAwesomeIcon icon={faLink} />
+        </IconStyled>
       </IconContainer>
     </div>
   );
 }
+

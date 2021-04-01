@@ -6,9 +6,18 @@ import Blogs from "../data/dataBlog";
 
 const BlogStyled = styled.div`
   display: flex;
-  /* flex-wrap:wrap ; */
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  align-self: auto;
   margin-top: 50px;
+`;
+
+const TestContainer = styled.div`
+  /* background-color: pink; */
+  width: 40%;
+  padding: 1rem;
+ 
 `;
 
 const ImageStyled = styled.img`
@@ -19,36 +28,39 @@ const ImageStyled = styled.img`
       rgba(255, 255, 255, 1) 66%
     )
     1;
-  height: 300px;
-  object-fit: contain;
-  margin: 20px;
+
+  width: 80%;
+  height:auto;
 `;
 
 const TitleStyle = styled.p`
+  /* background-color: yellow; */
   color: #392767;
   font-family: arial;
   font-size: 15px;
   font-weight: bold;
+  width: 80%;
 `;
 
 const SubTitleStyle = styled.p`
+  /* background-color: orange; */
   font-size: 12px;
   font-family: arial;
+  width: 80%;
   
 `;
 
 export default function Blog() {
   return (
-    <BlogStyled className='container'>
+    <BlogStyled >
       {Blogs.map((blog, i) => (
-        <div key={i}>
+        <TestContainer key={i}>
           <ImageStyled src={blog.img} alt='blog img' />
           <Link to={blog.link}>
-            <TitleStyle className='container'>{blog.title}</TitleStyle>
+            <TitleStyle>{blog.title}</TitleStyle>
           </Link>
-
-          <SubTitleStyle className='container'>{blog.subTitle}</SubTitleStyle>
-        </div>
+          <SubTitleStyle>{blog.subTitle}</SubTitleStyle>
+        </TestContainer>
       ))}
     </BlogStyled>
   );
