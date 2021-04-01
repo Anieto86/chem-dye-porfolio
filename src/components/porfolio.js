@@ -68,10 +68,10 @@ export default function Porfolio() {
     <div>
       <ContentStyle className='row'>
         <div className='col-3'></div>
-        <TitleStyled className='container col-3'>
+        <TitleStyled className='container col-lg-3'>
           Welcome to my Gallery
         </TitleStyled>
-        <MsgStyled className='container col-3'>
+        <MsgStyled className='container col-lg-3'>
           "ChemDye" born with the idea to help researchers to achieve their
           goals using the powerful tool of visual communication. As a scientist
           myself, I understood that time and resources are essential in

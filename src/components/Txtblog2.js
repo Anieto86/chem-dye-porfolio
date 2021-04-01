@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
-  faInstagram,
+  faFacebook,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -15,14 +15,14 @@ const TxtContainer = styled.div`
 `;
 
 const IconContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
+ 
 `;
 const IconStyled = styled.a`
   color: black;
   width: 5%;
   font-size: 30px;
   color: #392767;
+  padding: 2%;
 `;
 
 export default function Txtblog2() {
@@ -116,14 +116,14 @@ export default function Txtblog2() {
         </p>
       </TxtContainer>
       <IconContainer className='container'>
-        <IconStyled href={"/"}>
+        <IconStyled href={"/https://twitter.com/intent/tweet?url=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt3&text="}>
           <FontAwesomeIcon icon={faTwitter} />
         </IconStyled>
-        <IconStyled href={"https://www.instagram.com/chemdye_si/"}>
-          <FontAwesomeIcon icon={faInstagram} />
+        <IconStyled href={"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt3"}>
+          <FontAwesomeIcon icon={faFacebook} />
         </IconStyled>
         <IconStyled
-          href={"https://www.linkedin.com/in/mariana-oksdath-mansilla/"}
+          href={"http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt3&title="}
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </IconStyled>

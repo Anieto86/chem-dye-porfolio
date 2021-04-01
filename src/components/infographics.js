@@ -4,10 +4,9 @@ import styled from "styled-components";
 import portfolio from "../data/dataPorfolio";
 
 const ImgStyledP = styled.img`
-background-color:white;
+  background-color: white;
   height: 400px;
-  object-fit: contain; 
-
+  object-fit: contain;
 `;
 
 const ImgContainer = styled.div`
@@ -18,16 +17,13 @@ const ImgContainer = styled.div`
   &:hover {
     transform: scale(1.1);
   }
-
 `;
 const PortContainer = styled.div`
-margin-top: 5rem;
- 
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   /* align-content :stretch; */
-
 `;
 
 export default function Infographic(props) {

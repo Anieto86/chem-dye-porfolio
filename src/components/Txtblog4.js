@@ -4,12 +4,9 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
-  faInstagram,
   faLinkedinIn,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-
-import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 const TxtContainer = styled.div`
   margin: 1rem;
@@ -18,14 +15,14 @@ const TxtContainer = styled.div`
 `;
 
 const IconContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
+ 
+  
 `;
 const IconStyled = styled.a`
   color: black;
-  width: 5%;
   font-size: 30px;
   color: #392767;
+  padding: 2%;
 `;
 
 export default function Txtblog4() {
@@ -183,31 +180,31 @@ export default function Txtblog4() {
         </p>
       </TxtContainer>
 
-      <IconContainer className='container'>
-        <IconStyled href={"https://twitter.com/share?text=&url=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt4"}>
+      <IconContainer className='container' >
+        <IconStyled
+          href={
+            "https://twitter.com/intent/tweet?url=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt4&text="
+          }
+        >
           <FontAwesomeIcon icon={faTwitter} />
-        </IconStyled>
-        <IconStyled href={"https://www.instagram.com/chemdye_si/"}>
-          <FontAwesomeIcon icon={faInstagram} />
         </IconStyled>
 
         <IconStyled
-          href={"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt4"}
+          href={
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt4"
+          }
         >
           <FontAwesomeIcon icon={faFacebook} />
         </IconStyled>
 
-        <IconStyled
-          href={"http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt4"}
+        <IconStyled 
+          href={
+            "http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt4&title="
+          }
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
-        </IconStyled>
-
-        <IconStyled href={"https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/blog/txt4"} >
-          <FontAwesomeIcon icon={faLink} />
         </IconStyled>
       </IconContainer>
     </div>
   );
 }
-
