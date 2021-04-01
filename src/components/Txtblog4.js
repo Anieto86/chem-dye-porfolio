@@ -6,6 +6,7 @@ import {
   faTwitter,
   faInstagram,
   faLinkedinIn,
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faLink } from "@fortawesome/free-solid-svg-icons";
@@ -183,14 +184,21 @@ export default function Txtblog4() {
       </TxtContainer>
 
       <IconContainer className='container'>
-        <IconStyled href={"https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A3000%2Fblog%2Ftxt4"}>
+        <IconStyled href={"https://twitter.com/share?text=&url=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt4"}>
           <FontAwesomeIcon icon={faTwitter} />
         </IconStyled>
         <IconStyled href={"https://www.instagram.com/chemdye_si/"}>
           <FontAwesomeIcon icon={faInstagram} />
         </IconStyled>
+
         <IconStyled
-          href={"https://www.linkedin.com/in/mariana-oksdath-mansilla/"}
+          href={"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt4"}
+        >
+          <FontAwesomeIcon icon={faFacebook} />
+        </IconStyled>
+
+        <IconStyled
+          href={"http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchemdyeillustrations.com%2Fblog%2Ftxt4"}
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </IconStyled>
