@@ -1,0 +1,19 @@
+{
+  "name": "chem-dye-server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "author": "Raphael Terrier @R4ph-t",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "apollo-server": "^3.1.2",
+    "graphql": "^15.5.1"
+  }
+}
