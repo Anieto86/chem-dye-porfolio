@@ -1,15 +1,10 @@
 const { ApolloServer } = require("apollo-server");
-
-// const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-
 const typeDefs = require("./schema");
-// const resolvers = require("./resolver");
-// const TrackAPI = require("./datasources/track-api");
+const resolvers = require("./resolver");
 
 dotenv.config();
-// const app = express();
 
 //conect DB
 const mongoUrl = require("./key");
@@ -19,7 +14,6 @@ if (!mongoUrl) {
 
 mongoose
   .connect(mongoUrl, {
-    TopologyDescription: true,
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false,
@@ -31,12 +25,7 @@ mongoose
 //Servidor
 const server = new ApolloServer({
   typeDefs,
-  //resolvers,
-  // dataSources: () => {
-  //   return {
-  //     trackAPI: new TrackAPI(),
-  //   };
-  // },
+  resolvers,
 });
 
 server.listen().then(({ url }) => {
