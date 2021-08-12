@@ -2,7 +2,17 @@ const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Query {
-    sayHi: String!
+    getBlogs: [Blog]
+  }
+
+  type Blog {
+    id: ID!
+    title: String
+    imagePath: String
+    subTitle: String
+    link: String
+    likes: Int
+    views: Int
   }
 `;
 

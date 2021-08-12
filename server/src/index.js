@@ -3,7 +3,6 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const typeDefs = require("./schema");
 const resolvers = require("./resolver");
-
 dotenv.config();
 
 //conect DB
@@ -11,7 +10,6 @@ const mongoUrl = require("./key");
 if (!mongoUrl) {
   throw new Error("You must provide a MongoLab URI");
 }
-
 mongoose
   .connect(mongoUrl, {
     useCreateIndex: true,

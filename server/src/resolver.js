@@ -1,7 +1,16 @@
+const Blog = require("../models/Blog");
+
+console.log(Blog);
+
 const resolvers = {
   Query: {
-    sayHi: () => {
-      return "Hello World";
+    getBlogs: async () => {
+      try {
+        const blogs = await Blog.find();
+        return blogs;
+      } catch (error) {
+        throw new Error(error);
+      }
     },
   },
 };
