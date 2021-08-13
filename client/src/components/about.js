@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 //testing
-
 import mariana from "../img/mariana.jpg";
 
 const MarianaStyle = styled.img`
@@ -29,7 +28,7 @@ const TxtSubChem = styled.h2`
 const TextStyle = styled.p`
   /* font-weight: bold; */
   font-family: Abel;
-  font-size: 150%;;
+  font-size: 150%;
   background-color: white;
   line-height: 1.2;
 `;
