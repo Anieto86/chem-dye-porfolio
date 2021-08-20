@@ -1,9 +1,8 @@
-.root{
+.root {
   height: 100%;
 }
 body {
   margin: 0;
   padding: 0;
-  /* background-image: url('../src/components/img/Background2.jpg'); */
+  background-image: "#FFFFF";
 }
-

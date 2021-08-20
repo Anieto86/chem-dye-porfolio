@@ -1,6 +1,5 @@
 import React from "react";
-
-import "./App.css";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 //Router
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -19,9 +18,35 @@ import Txtblog3 from "./components/Txtblog3.js";
 import Txtblog2 from "./components/Txtblog2.js";
 import Txtblog1 from "./components/Txtblog1.js";
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      light: "#757ce8",
+      main: "pink",
+      dark: "#002884",
+      contrastText: "#fff",
+    },
+    secondary: {
+      main: "#ffc400",
+      light: "#ff7961",
+      dark: "#ba000d",
+      contrastText: "#000",
+    },
+  },
+  typography: {
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontSize: 14,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    fontWeightBold: 700,
+    htmlFontSize: 16,
+  },
+});
+
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Router>
         <div className='row'>
           <div className='col-lg-12 col-md-10 col-sm-10'>
@@ -38,8 +63,8 @@ function App() {
         </Route>
 
         <Route path='/porfolio'>
-          <Porfolio  title='Animations' />
-          <Infographics  />
+          <Porfolio title='Animations' />
+          <Infographics />
         </Route>
 
         <Route path='/about'>
@@ -61,11 +86,8 @@ function App() {
             </div>
           </div>
         </div>
-        
       </Router>
-
-      <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 

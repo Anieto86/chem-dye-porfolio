@@ -7,4 +7,4 @@ const testimonialsSchema = new Schema({
   role: String,
 });
 
-module.exports = model("Testimonials", testimonialsSchema);
+module.exports = model("Testimonial", testimonialsSchema);

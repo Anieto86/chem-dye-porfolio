@@ -44,29 +44,29 @@ export default function navigation() {
       <div className=' justify-content-end '>
         <ul className='nav '>
           <li className='nav-item '>
-            <Link to='/' style={{ textDecoration: 'none' }}>
+            <Link to='/' style={{ textDecoration: "none" }}>
               <BtnStyle className='nav-link active' to='/'>
-                Home
+                Services
               </BtnStyle>
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/porfolio' style={{ textDecoration: 'none' }}>
-              <BtnStyle className='nav-link'>Porfolio</BtnStyle>
+            <Link to='/porfolio' style={{ textDecoration: "none" }}>
+              <BtnStyle className='nav-link'>Gallery</BtnStyle>
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/about' style={{ textDecoration: 'none' }}>
+            <Link to='/about' style={{ textDecoration: "none" }}>
               <BtnStyle className='nav-link'>About</BtnStyle>
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/testimonials' style={{ textDecoration: 'none' }}>
+            <Link to='/testimonials' style={{ textDecoration: "none" }}>
               <BtnStyle className='nav-link'>Testimonial</BtnStyle>
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/blog' style={{ textDecoration: 'none' }}>
+            <Link to='/blog' style={{ textDecoration: "none" }}>
               <BtnStyle className='nav-link'>Blog</BtnStyle>
             </Link>
           </li>

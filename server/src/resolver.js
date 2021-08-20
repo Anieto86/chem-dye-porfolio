@@ -1,30 +1,29 @@
 const Blog = require("../models/Blog");
 const Portfolio = require("../models/Portfolio");
-const Testimonials = require("../models/Testimonials");
+const Testimonial = require("../models/Testimonial");
 
 const resolvers = {
   Query: {
-    getBlogs: async () => {
+    Blogs: async (_, { id }, context, info) => {
       try {
-        const blogs = await Blog.find();
-        return blogs;
+        const blog = await Blog.find(id);
+        return blog;
       } catch (error) {
         throw new Error(error);
       }
     },
-    getPortfolio: async () => {
+    Portfolios: async (_, { id }, context, info) => {
       try {
-        const portfolio = await Portfolio.find();
+        const portfolio = await Portfolio.find(id);
         return portfolio;
       } catch (error) {
         throw new Error(error);
       }
     },
-
-    getTestimonials: async () => {
+    Testimonials: async (_, { id }, context, info) => {
       try {
-        const testimonials = await Testimonials.find();
-        return testimonials;
+        const testimonial = await Testimonial.find(id);
+        return testimonial;
       } catch (error) {
         throw new Error(error);
       }

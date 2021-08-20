@@ -2,9 +2,9 @@ const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Query {
-    getBlogs: [Blog]
-    getPortfolio: [Portfolio]
-    getTestimonials: [Testimonials]
+    Blogs(id: ID): [Blog]
+    Portfolios(id: ID): [Portfolio]
+    Testimonials(id: ID): [Testimonial]
   }
 
   type Blog {
@@ -19,12 +19,12 @@ const typeDefs = gql`
 
   type Portfolio {
     id: ID!
-    imagePath: String
     name: String
+    imagePath: String
   }
 
-  type Testimonials {
-    Id: ID
+  type Testimonial {
+    id: ID!
     name: String
     imagePath: String
     description: String
