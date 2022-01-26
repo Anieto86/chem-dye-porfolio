@@ -42,7 +42,6 @@ export default function Txtblog1() {
         </h2>
         <br />
         <br />
-
         <p>
           Welcome to my blog, I&rsquo;m Mariana, a scientific designer and
           illustrator. In this space I will be discussing topics related to

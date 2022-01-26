@@ -19,7 +19,7 @@ const TxtStyle = styled.h1`
   margin-left: 20px;
   font-size: 30px;
   font-family: Abel;
-  color: #392767;
+  color: #fff;
 `;
 const BtnStyle = styled.button`
   background-color: transparent;
@@ -29,6 +29,7 @@ const BtnStyle = styled.button`
   font-size: 20px;
   font-family: Abel;
   margin: 10px;
+  color: #fff;
 `;
 
 export default function navigation() {
@@ -60,11 +61,7 @@ export default function navigation() {
               <BtnStyle className='nav-link'>About</BtnStyle>
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link to='/testimonials' style={{ textDecoration: "none" }}>
-              <BtnStyle className='nav-link'>Testimonial</BtnStyle>
-            </Link>
-          </li>
+
           <li className='nav-item'>
             <Link to='/blog' style={{ textDecoration: "none" }}>
               <BtnStyle className='nav-link'>Blog</BtnStyle>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const BtnStyle = styled.button`
-background-color:white; 
+  background-color: white;
   color: #392767;
   border-radius: 40px;
   margin: 7px;
@@ -24,7 +24,7 @@ const BtnContianerStyle = styled.div`
   margin-top: 8rem;
 `;
 
-export default function Buttons() {
+const Buttons = () => {
   return (
     <BtnContianerStyle className='container'>
       <div className='row'>
@@ -46,4 +46,6 @@ export default function Buttons() {
       </div>
     </BtnContianerStyle>
   );
-}
+};
+
+export default Buttons;

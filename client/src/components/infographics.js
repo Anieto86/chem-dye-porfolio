@@ -26,7 +26,7 @@ const PortContainer = styled.div`
   /* align-content :stretch; */
 `;
 
-export default function Infographic(props) {
+const Infographic = () => {
   return (
     <PortContainer className='container'>
       {portfolio.map((port, i) => (
@@ -40,4 +40,5 @@ export default function Infographic(props) {
       ))}
     </PortContainer>
   );
-}
+};
+export default Infographic;

@@ -1,8 +1,8 @@
 .root {
   height: 100%;
 }
-body {
-  margin: 0;
-  padding: 0;
-  background-image: "#FFFFF";
+
+.bg {
+  height: 100vh;
+  background-color: black;
 }
